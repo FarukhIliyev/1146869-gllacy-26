@@ -13,6 +13,13 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог</a>
+            <ul>                                            <!--добавил дроптаун-->
+              <li><a href="catalog.html">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="catalog.html">Щербеты</a></li>
+              <li><a href="catalog.html">Фруктовый лед</a></li>
+              <li><a href="catalog.html">Мелорин</a></li>
+            </ul>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -24,28 +31,76 @@
         <div class="main-menu">
           <div class="search-area">
             <h2 class="visually-hidden">Поиск по сайту</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form action="https://echo.htmlacademy.ru" method="get">
               <label for="search-field" class="visually-hidden">Поиск</label>
-              <input type="search" name="search" id="search-field" value="Что ищем?">
+              <input type="text" name="search" id="search-field" value="Что ищем?">
             </form>
           </div>
           <div class="entrance-area">
-            <h2 class="visually-hidden">Вход на сайт</h2>
+            <h2 class="visually-hidden">Вход</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label for="entrance-field" class="visually-hidden">Вход</label>
               <input type="email" name="email" id="entrance-field" placeholder="Электронная почта">
               <input type="password" name="password" id="password-field" placeholder="Пароль">
-              <button type="submit">Войти</button>
+              <button type="submit" name="login">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
             </form>
           </div>
-        <!--TODO вложение по корзине в разработке
           <div class="basket-area">
-            <h2 class="visually-hidden">Корзина</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="basket-field" class="visually-hidden">2 товара</label>
-            </form>
+          <h2 class="visually-hidden">Корзина</h2>
+          <a href="#">2 товара</a>
+            <table>
+              <tr>
+                <td>
+                  <button type="button" aria-label="delete">X</button>
+                </td>
+                <td>
+                  <img src="img/products/little-ice-cream-1.png"
+                  width="33" height="33" alt="orange-jam">
+                </td>
+                <td>
+                  Пломбир с апельсиновым джемом
+                </td>
+                <td>
+                  1,5 кг х
+                </td>
+                <td>
+                  200 руб.
+                </td>
+                <td>
+                  300 руб.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" aria-label="delete">X</button>
+                </td>
+                <td>
+                  <img src="img/products/little-ice-cream-2.png"
+                  width="33" height="33" alt="orange-jam">
+                </td>
+                <td>
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+                <td>
+                  1,5 кг х
+                </td>
+                <td>
+                  300 руб.
+                </td>
+                <td>
+                  450 руб.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Итого: 750 руб.
+                </td>
+              </tr>
+            </table>
+            <button type="submit">Оформить заказ</button>
           </div>
-        -->
         </div>
       </nav>
     </header>
@@ -53,38 +108,43 @@
       <section class="selection menu">
         <form action="https://echo.htmlacademy.ru" method="post">
           <div>
-            <label for="sorting-field">Сортировка:</label><br>
-              <select name="">
-                <option>по популярности</option>
+            <label for="sorting-field">Сортировка:</label>
+<!--группировка элементов списка-->
+            <select name="list-items">
+              <option>по популярности</option>
             </select>
           </div>
           <div>
-            <label for="price-field">Цена: 100 руб. - 500 руб.</label><br>
+            <label for="price-field">Цена: 100 руб. - 500 руб.</label>
               <input type="range" min="100" max="500" step="50">
           </div>
           <div>
-            <label for="fat-content-field">Жирность:</label><br>
-              <input type="radio" name="fat-content" value="0%">
-              <label>0%</label>
-              <input type="radio" name="fat-content" value="up to 10%" checked>
-              <label>до 10%</label>
-              <input type="radio" name="fat-content" value="up to 30%">
-              <label>до 30%</label>
-              <input type="radio" name="fat-content" value="over 30%">
-              <label>свыше 30%</label>
+            <fieldset>
+            <legend for="fat-content-field">Жирность:</legend>
+              <input type="radio" name="fat-content" id="zero-field" value="0%">
+              <label for="zero-field">0%</label>
+              <input type="radio" name="fat-content" id="up-to-ten-field" value="up-to-10%" checked>
+              <label for="up-to-ten-field">до 10%</label>
+              <input type="radio" name="fat-content" id="up-to-thirty-field" value="up-to-30%">
+              <label for="up-to-thirty-field">до 30%</label>
+              <input type="radio" name="fat-content" id="over-thirty-field" value="over-30%">
+              <label for="over-thirty-field">свыше 30%</label>
+            </fieldset>
           </div>
           <div>
-            <label for="fillers-field">Наполнители:</label><br>
-              <input type="checkbox" name="chocolads" id="chocolads" checked>
+            <fieldset>
+            <legend for="fillers-field">Наполнители:</legend>
+              <input type="checkbox" name="chocolads" id="chocolads-field" checked>
               <label for="chocolads-field">шоколадные</label>
-              <input type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+              <input type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
               <label for="sugar-powders-field">сахарные присыпки</label>
-              <input type="checkbox" name="fruits" id="fruits">
+              <input type="checkbox" name="fruits" id="fruits-field">
               <label for="fruits-field">фрукты</label>
-              <input type="checkbox" name="syrups" id="syrups">
+              <input type="checkbox" name="syrups" id="syrups-field">
               <label for="syrups-field">сиропы</label>
-              <input type="checkbox" name="jams" id="jams">
+              <input type="checkbox" name="jams" id="jams-field">
               <label for="jams-field">джемы</label>
+            </fieldset>
           </div>
         </form>
       </section>
@@ -100,84 +160,93 @@
           <a href="#">Сливочное</a>
         </li>
       </ul>
+<!--незнаю на сколько верно я сделал пагинацию-->
       <div class="main-catalog">
-        <ul class="catalog-list">
+        <ul сlass="catalog-list" id="catalog-list-one">
           <li class="catalog-item">
             <img src="img/products/orange-ice-cream.png" width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <span class="ice-crea-price">310<strong>р/кг</strong></span>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/coffee-ice-cream.png" width="267" height="267"
             alt="Сливочно-кофейное с кусочками шоколада">
             <span class="ice-cream-price">380<strong>р/кг</strong></span>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/strawberry-ice-cream.png" width="267" height="267"
             alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <span class="ice-cream-price">355<strong>р/кг</strong></span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/creme-brulee-ice-cream.png" width="267" height="267"
             alt="Сливочное крем-брюле с карамельной подливкой">
             <span class="ice-cream-price">415<strong>р/кг</strong></span>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/lingonberry-ice-cream.png" width="267" height="267"
             alt="Сливочное с брусничным джемом">
             <span class="ice-cream-price">325<strong>р/кг</strong></span>
             <a href="#">Сливочное с брусничным джемом</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/blueberry-ice-cream.png" width="267" height="267"
             alt="Сливочно-черничное с цельными ягодами черники">
             <span class="ice-cream-price">410<strong>р/кг</strong></span>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/lemon-ice-cream.png" width="267" height="267"
             alt="Сливочно-лимонное с карамельной присыпкой">
             <span class="ice-cream-price">375<strong>р/кг</strong></span>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/milk-chocolate-ice-cream.png" width="267" height="267"
             alt="Сливочное с шоколадной стружкой">
             <span class="ice-cream-price">320<strong>р/кг</strong></span>
             <a href="#">Сливочное с шоколадной стружкой</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/vanilla-ice-cream.png" width="267" height="267"
             alt="Сливочно-ванильное с кусочками шоколада">
             <span class="ice-cream-price">440<strong>р/кг</strong></span>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/menthol-ice-cream.png" width="267" height="267"
             alt="Сливочноe с ментоловым сиропом">
             <span class="ice-cream-price">435<strong>р/кг</strong></span>
             <a href="#">Сливочноe с ментоловым сиропом</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/black-chocolate-ice-cream.png" width="267" height="267"
             alt="Сливочное с кусочками черного шоколада">
             <span class="ice-cream-price">355<strong>р/кг</strong></span>
             <a href="#">Сливочное с кусочками черного шоколада</a>
-          </li>
+            </li>
           <li class="catalog-item">
             <img src="img/products/peppermint-ice-cream.png" width="267" height="267"
             alt="Сливочное с мятным сиропом">
             <span class="ice-cream-price">420<strong>р/кг</strong></span>
             <a href="#">Сливочное с мятным сиропом</a>
-          </li>
+            </li>
         </ul>
-          <!--TODO пагинация в разработке
-          <button type="button">Вперед</button>
-          <button type="button">Назад</button>-->
+<!--пагинация-->
+        <h2 class="visually-hidden">Пагинация</h2>
+        <ol>
+          <li><a href="#">«</a></li>
+          <li><a href="catalog-list-one">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ol>
       </div>
     </main>
     <footer class="main-footer">
