@@ -83,23 +83,27 @@
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Малинка даром!</h2>
-          <p>
-            При покупке 2 кг любого фруктового мороженого,
-            добавим в ваш заказ банку малинового варенья бесплатно.
-          </p>
-          <a href="#">Хочу варенье!</a>
-      </div>
-      <div>
-        <h2>Шоколадки даром!</h2>
-          <p>
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
-            шоколадной присыпки совершенно бесплатно.
-          </p>
-          <a href="#">Хочу шоколадки!</a>
-      </div>
-      <div class="main-catalog">
+      <section>
+        <h2 class="visually-hidden">Акционные предложения</h2>
+        <section>
+          <h3>Малинка даром!</h3>
+            <p>
+              При покупке 2 кг любого фруктового мороженого,
+              добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+            <a href="#">Хочу варенье!</a>
+        </section>
+        <section>
+          <h3>Шоколадки даром!</h3>
+            <p>
+              При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+              шоколадной присыпки совершенно бесплатно.
+            </p>
+            <a href="#">Хочу шоколадки!</a>
+        </section>
+      </section>
+      <section class="main-catalog">
+        <h2 class="visually-hidden">Хит продаж</h2>
         <ul>
           <li class="catalog-item">
             <img src="img/products/orange-ice-cream.png" width="267" height="267"
@@ -126,9 +130,9 @@
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
         </ul>
-      </div>
+      </section>
       <section>
-        <h2 class="visually-hidden" id="about-company">Магазин Глэйси — это онлайн- и
+        <h2 id="about-company">Магазин Глэйси — это онлайн- и
             офлайн-магазин по продаже мороженого собственного
             производства на развес</h2>
         <ul>
@@ -165,53 +169,49 @@
           самого вкусного, что у нас происходит. Обещаем не спамить и не слать
           всякой ненужной ерунды. Честно =)
         </p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="email-field" class="visually-hidden">Рассылка</label>
-            <input type="email" name="email" id="email-field" placeholder="Электронная почта">
-            <button type="submit">Отправить</button>
-          </form>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="email-field" class="visually-hidden">Рассылка</label>
+          <input type="email" name="email" id="email-field" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
+        </form>
       </section>
       <section>
         <div class="main-contacts">
           <h2 class="visually-hidden">
             Адрес главного офиса
             и офлайн магазина:</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="form-feed-back" class="visually-hidden">Обратная связь</label>
-              <img src="img/products/map.jpg" width="1250" height="430"
-                alt="Наш адрес на карте. ул.Большая Конюшенная 15/8, Санкт-Петербург">
               <address>ул.Большая Конюшенная 15/8, Санкт-Петербург</address>
               <p>
                 Для заказов по телефону:
-                <a href="tel:+88124502525"><b>88124502525</b></a>
+                <a href="tel:+88124502525">88124502525</a>
                 (с 10 до 20 ежедневно)
               </p>
-              <button type="submit" name="form-feed-back">Форма обратной связи</button>
-            </form>
+              <a href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="social-network">
+      <section class="social-network">
+        <h2 class="visually-hidden">Глейси в соцсетях</h2>
         <ul>
           <li>
             <a href="https://twitter.com"><span class="visually-hidden">Мы в Твиттер</span>
-            <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
+              <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
           </li>
           <li>
             <a href="http://instagram.com"><span class="visually-hidden">Мы в Инстаграм</span>
-            <img src="img/icons/instagram.svg" width="32" height="32" alt="instagram"></a>
+              <img src="img/icons/instagram.svg" width="32" height="32" alt="instagram"></a>
           </li>
           <li>
             <a href="http://facebook.com"><span class="visually-hidden">Мы в Фейсбук</span>
-            <img src="img/icons/fb.svg" width="32" height="32" alt="facebook"></a>
+              <img src="img/icons/fb.svg" width="32" height="32" alt="facebook"></a>
           </li>
           <li>
             <a href="http://vk.com"><span class="visually-hidden">Мы в Вконтакте</span>
-            <img src="img/icons/vk.svg" width="32" height="32" alt="vkontakte"></a>
+              <img src="img/icons/vk.svg" width="32" height="32" alt="vkontakte"></a>
           </li>
         </ul>
-      </div>
+      </section>
       <div>
         <ul>
           <li>
@@ -231,16 +231,15 @@
       <div class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/icons/logo-htmlacademy.svg" width="108" height="39" alt="HTMLAcademy"></a>
-        <p>
-          Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>2019
-        </p>
+        <p>Сделано в
+          <a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>2019</p>
       </div>
     </footer>
 <!--зона формы модуляции (поппап)-->
     <section class="feedback">
       <h2 class="visually-hidden">Написать нам</h2>
       <p>Мы обязательно Вам ответим</p>
-      <button type="button" aria-label="close">Х</button>             <!--кнопка закрывает форму-->
+      <button type="button" aria-label="Закрыть модальное окно">Х</button>     <!--кнопка закрывает форму-->
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="name" class="visually-hidden">Имя</label>
         <input type="name" name="name" id="name" placeholder="Как вас зовут?">
@@ -248,7 +247,7 @@
         <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
         <textarea name="massage" id="massage" placeholder="Напишите что-нибудь..."
         cols="50" rows="10"></textarea>
-        <button type="submit" name="feed-back">Отправить</button>     <!--кнопка отправляет данные-->
+        <button type="submit" name="feedback">Отправить</button>     <!--кнопка отправляет данные-->
       </form>
     </section>
   </body>
