@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="navigation">
         <a>
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
         </a>
-        <ul>
-          <li>
+        <ul сlass="sub-menu">
+          <li class="item-menu">
             <a href="catalog.html">Каталог</a>
-            <ul>                                            <!--дроптаун-->
+            <ul class="droptown">                                            <!--дроптаун-->
               <li><a href="catalog.html">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="catalog.html">Щербеты</a></li>
@@ -21,45 +21,53 @@
               <li><a href="catalog.html">Мелорин</a></li>
             </ul>
           </li>
-          <li>
+          <li class="item-menu">
             <a href="#">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="item-menu">
             <a href="#about-company">О компании</a>
           </li>
         </ul>
-        <div class="main-menu">
-          <div class="search-area">
+        <ul class="sub-menu">
+          <li class="menu-search">
+            <section class="search-area">
             <h2 class="visually-hidden">Поиск по сайту</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <label for="search-field" class="visually-hidden">Поиск</label>
-              <input type="text" name="search" id="search-field" value="Что ищем?">
-            </form>
-          </div>
-          <div class="entrance-area">
-            <h2 class="visually-hidden">Вход</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" name="email" id="entrance-field" placeholder="Электронная почта">
-              <input type="password" name="password" id="password-field" placeholder="Пароль">
-              <button type="submit" name="login">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </form>
-          </div>
-            <h2 class="visually-hidden">Корзина</h2>
-            <a href="#">Пусто</a>
-        </div>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <label for="search-field" class="visually-hidden">Поиск</label>
+                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+              </form>
+            </section>
+          </li>
+          <li class="menu-entrance">
+            <section class="entrance-area">
+              <h2 class="visually-hidden">Вход</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="email" name="email" id="entrance-field" placeholder="Электронная почта">
+                <input type="password" name="password" id="password-field" placeholder="Пароль">
+                <button type="submit" name="login">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </section>
+          </li>
+          <li сlass="menu-basket">
+            <section class="basket-area">
+              <h2 class="visually-hidden">Корзина</h2>
+              <a href="#">Пусто</a>
+            </section>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main>
+    <main bloc="bloc-main">
       <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
-        <p>
+        <p class="call-number">
           С 10 до 20, ежедневно
           8 812 450-25-25
         </p>
 <!--здесь готовится слайдер-->
       <div class="slider">
-        <ul>
+        <ul class="slide-list">
           <li>
             <p>Крем-брюле и пломбир с малиновым джемом</p>
             <img src="img/products/slide-one-raspberry-jam.png"
@@ -82,10 +90,17 @@
             <a href="#">Давайте оба!</a>
           </li>
         </ul>
+        <ul>
+          <li><a href="#">вперед</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">назад</a></li>
+        </ul>
       </div>
-      <section>
+      <section class="special-offer">
         <h2 class="visually-hidden">Акционные предложения</h2>
-        <section>
+        <section class="stock">
           <h3>Малинка даром!</h3>
             <p>
               При покупке 2 кг любого фруктового мороженого,
@@ -93,7 +108,7 @@
             </p>
             <a href="#">Хочу варенье!</a>
         </section>
-        <section>
+        <section class="stock">
           <h3>Шоколадки даром!</h3>
             <p>
               При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
@@ -104,7 +119,7 @@
       </section>
       <section class="main-catalog">
         <h2 class="visually-hidden">Хит продаж</h2>
-        <ul>
+        <ul class="hit-list">
           <li class="catalog-item">
             <img src="img/products/orange-ice-cream.png" width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -131,7 +146,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="advantages">
         <h2 id="about-company">Магазин Глэйси — это онлайн- и
             офлайн-магазин по продаже мороженого собственного
             производства на развес</h2>
@@ -157,7 +172,7 @@
           </li>
         </ul>
       </section>
-      <article>
+      <article class="blurb">
           <h2>Новое в нашем блоге</h2>
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
@@ -175,25 +190,26 @@
           <button type="submit">Отправить</button>
         </form>
       </section>
-      <section>
+      <section class="contact-details">
         <div class="main-contacts">
-          <h2 class="visually-hidden">
+          <p class="contact-address">
             Адрес главного офиса
-            и офлайн магазина:</h2>
-              <address>ул.Большая Конюшенная 15/8, Санкт-Петербург</address>
-              <p>
-                Для заказов по телефону:
-                <a href="tel:+88124502525">88124502525</a>
-                (с 10 до 20 ежедневно)
-              </p>
-              <a href="#">Форма обратной связи</a>
+            и офлайн магазина:
+          </p>
+          <address>ул.Большая Конюшенная 15/8, Санкт-Петербург</address>
+          <p class="contact-numbers">
+            Для заказов по телефону:
+            <a href="tel:+88124502525">88124502525</a>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="social-network">
         <h2 class="visually-hidden">Глейси в соцсетях</h2>
-        <ul>
+        <ul class="social-network-list">
           <li>
             <a href="https://twitter.com"><span class="visually-hidden">Мы в Твиттер</span>
               <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
@@ -212,8 +228,8 @@
           </li>
         </ul>
       </section>
-      <div>
-        <ul>
+      <div class="organization">
+        <ul class="organization-data">
           <li>
             <a href="#">Для поставщиков</a>
           </li>

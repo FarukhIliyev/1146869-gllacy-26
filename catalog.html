@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="navigation">
         <a href="index.html">
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
         </a>
-        <ul>
-          <li>
+        <ul сlass="sub_menu">
+          <li class="item-menu">
             <a href="catalog.html">Каталог</a>
-            <ul>                                            <!--добавил дроптаун-->
+            <ul class="droptown">                                            <!--добавил дроптаун-->
               <li><a href="catalog.html">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="catalog.html">Щербеты</a></li>
@@ -21,24 +21,26 @@
               <li><a href="catalog.html">Мелорин</a></li>
             </ul>
           </li>
-          <li>
+          <li class="item-menu">
             <a href="#">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="item-menu">
             <a href="index.html">О компании</a>
           </li>
         </ul>
-        <ul class="main-menu">
-          <li class="main-menu-search">
+        <ul class="sub-menu">
+          <li class="menu-search">
+            <a href="#" area-label="Открыть окно поиска">Поиск</a>
             <section class="search-area">
               <h2 class="visually-hidden">Поиск по сайту</h2>
               <form action="https://echo.htmlacademy.ru" method="get">
                 <label for="search-field" class="visually-hidden">Поиск</label>
-                <input type="text" name="search" id="search-field" value="Что ищем?">
+                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
               </form>
             </section>
           </li>
-          <li class="main-menu-entrance">
+          <li class="menu-entrance">
+            <a href="#" area-label="Открыть окно входа">Вход</a>
             <section class="entrance-area">
               <h2 class="visually-hidden">Вход</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
@@ -51,60 +53,60 @@
               </form>
             </section>
           </li>
-          <li сlass="main-menu-basket">
+          <li сlass="menu-basket">
             <section class="basket-area">
               <h2 class="visually-hidden">Корзина</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
-              <a href="#">2 товара</a>
-                <table>
-                  <tr>
-                    <td>
-                      <button type="button" aria-label="убрать из корзины">X</button>
-                    </td>
-                    <td>
-                      <img src="img/products/little-ice-cream-1.png"
-                      width="33" height="33" alt="orange-jam">
-                    </td>
-                    <td>
-                      Пломбир с апельсиновым джемом
-                    </td>
-                    <td>
-                      1,5 кг х
-                    </td>
-                    <td>
-                      200 руб.
-                    </td>
-                    <td>
-                      300 руб.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <button type="button" aria-label="delete">X</button>
-                    </td>
-                    <td>
-                      <img src="img/products/little-ice-cream-2.png"
-                      width="33" height="33" alt="orange-jam">
-                    </td>
-                    <td>
-                      Клубничный пломбир с присыпкой из белого шоколада
-                    </td>
-                    <td>
-                      1,5 кг х
-                    </td>
-                    <td>
-                      300 руб.
-                    </td>
-                    <td>
-                      450 руб.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Итого: 750 руб.
-                    </td>
-                  </tr>
-                </table>
+                <a href="#" area-label="Открыть окно корзины">2 товара</a>
+                  <table сlass="contents-of-goods">
+                    <tr>
+                      <td>
+                        <button type="button" aria-label="убрать из корзины">X</button>
+                      </td>
+                      <td>
+                        <img src="img/products/little-ice-cream-1.png"
+                        width="33" height="33" alt="orange-jam">
+                      </td>
+                      <td>
+                        Пломбир с апельсиновым джемом
+                      </td>
+                      <td>
+                        1,5 кг х
+                      </td>
+                      <td>
+                        200 руб.
+                      </td>
+                      <td>
+                        300 руб.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="button" aria-label="delete">X</button>
+                      </td>
+                      <td>
+                        <img src="img/products/little-ice-cream-2.png"
+                        width="33" height="33" alt="orange-jam">
+                      </td>
+                      <td>
+                        Клубничный пломбир с присыпкой из белого шоколада
+                      </td>
+                      <td>
+                        1,5 кг х
+                      </td>
+                      <td>
+                        300 руб.
+                      </td>
+                      <td>
+                        450 руб.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Итого: 750 руб.
+                      </td>
+                    </tr>
+                  </table>
                 <button type="submit">Оформить заказ</button>
               </form>
             </section>
@@ -112,23 +114,35 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="selection menu">
+    <main сlass="bloc-main">
+    <h2 class="selection-name">Сливочное мороженое</h2>
+      <ul class="ice-cream-list">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Сливочное</a>
+        </li>
+      </ul>
+      <fieldset class="selection-menu">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div>
+          <fieldset class="sorting">
             <label for="sorting-field">Сортировка:</label>
 <!--группировка элементов списка-->
             <select name="list-items">
               <option>по популярности</option>
             </select>
-          </div>
-          <fieldset>
+          </fieldset>
+          <fieldset class="sorting-price">
             <label for="price-field">Цена: 100 руб. - 500 руб.</label>
               <input type="range" min="100" max="500" step="50">
           </fieldset>
-          <fieldset>
-            <legend for="fat-content-percent">Жирность:</legend>
-              <ul>
+          <fieldset class="sorting-composition">
+            <legend for="fat-percent">Жирность:</legend>
+              <ul class="percent">
                 <li>
                   <input type="radio" name="fat-content" id="zero-percent" value="0%">
                 </li>
@@ -155,9 +169,9 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
-            <legend for="fillers-field">Наполнители:</legend>
-              <ul>
+          <fieldset class="sorting-ingredient">
+            <legend for="fillers">Наполнители:</legend>
+              <ul class="ingredient">
                 <li>
                   <input type="checkbox" name="chocolads" id="chocolads-field" checked>
                 </li>
@@ -192,19 +206,7 @@
           </fieldset>
             <button type="button">Применить</button>
         </form>
-      </section>
-      <h1 class="visually-hidden">Сливочное мороженое</h1>
-      <ul>
-        <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="#">Каталог</a>
-        </li>
-        <li>
-          <a href="#">Сливочное</a>
-        </li>
-      </ul>
+      </fieldset>
 <!--незнаю на сколько верно я сделал пагинацию-->
       <div class="main-catalog">
         <ul сlass="catalog-list" id="catalog-list-one">
@@ -283,7 +285,7 @@
         </ul>
 <!--пагинация-->
         <h2 class="visually-hidden">Пагинация</h2>
-        <ol>
+        <ol class="pagination">
           <li><a href="#">«</a></li>
           <li><a href="catalog-list-one">1</a></li>
           <li><a href="#">2</a></li>
@@ -297,7 +299,7 @@
     <footer class="main-footer">
       <section class="social-network">
         <h2 class="visually-hidden">Глейси в соцсетях</h2>
-        <ul>
+        <ul сlass="social-network-list">
           <li>
             <a href="https://twitter.com"><span class="visually-hidden">Мы в Твиттер</span>
               <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
@@ -316,8 +318,8 @@
           </li>
         </ul>
       </section>
-      <div>
-        <ul>
+      <div сlass="organization">
+        <ul class="organization-data">
           <li>
             <a href="#">Для поставщиков</a>
           </li>
