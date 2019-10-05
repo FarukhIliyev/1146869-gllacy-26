@@ -13,36 +13,40 @@
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
         </a>
   <!--навигация по сайту-->
-        <ul сlass="site-navigation-list">
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="catalog.html">Каталог</a>
-            <section class="site-navigation-dropdown dropdown">
-              <ul class="dropdown-list">
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Новинки</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Сливочное</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Щербеты</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Фруктовый лед</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Мелорин</a>
-                </li>
-              </ul>
-            </section>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#about-company">О компании</a>
-          </li>
-        </ul>
+        <section class="site-navigation">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+          <ul class="site-navigation-list">
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="catalog.html">Каталог</a>
+              <section class="site-navigation-dropdown dropdown">
+                <h2 class="visually-hidden">Меню навигации</h2>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Новинки</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Щербеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Мелорин</a>
+                  </li>
+                </ul>
+              </section>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#about-company">О компании</a>
+            </li>
+          </ul>
+        </section>
   <!--юзер навигация-->
         <ul class="user-navigation-list">
           <li class="user-navigation-item">
@@ -82,25 +86,25 @@
           <a href="tel:+88124502525">8 812 450-25-25</a>
         </p>
   <!--слайдер-->
-      <div class="slider slider">
+  <!--    <div class="slider">
         <ul class="slider-list">
           <li class="slider-item">
             <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
             <img class="slider-image" src="img/products/slide-one-raspberry-jam.png"
             width="1045" height="881" alt="raspberry-jam">
-            <a href="#">Давайте оба!</a>
+            <a class="button-details" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item">
             <p class="slider-text">Шоколадный пломбир и лимонный сорбер</p>
             <img class="slider-image" src="img/products/slide-two-lemon-sorber.png"
             width="1065" height="859" alt="lemon-sorber">
-            <a href="#">Давайте оба!</a>
+            <a class="button-details" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item">
             <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
             <img class="slider-image" src="img/products/slide-three-strawberry-sorbet.png"
             width="1079" height="854" alt="strawberry-sorber">
-            <a href="#">Давайте оба!</a>
+            <a class="button-details" href="#">Давайте оба!</a>
           </li>
         </ul>
       </div>
@@ -110,14 +114,14 @@
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
         </ul>
-      </div>
+      </div>-->
   <!--специальное предложение-->
       <div class="main-index-columns">
         <section class="special-offer">
           <h2 class="visually-hidden">Акционные предложения</h2>
           <section class="special-offer-stock">
             <h3 class="special-offer-stock-title">Малинка даром!</h3>
-              <p class="special-offer-stock">
+              <p class="special-offer-stock-text">
                 При покупке 2 кг любого фруктового мороженого,
                 добавим в ваш заказ банку малинового варенья бесплатно.
               </p>
@@ -134,31 +138,31 @@
         </section>
       </div>
   <!--хит продаж-->
-      <section class="catalog-hit">
+      <section class="catalog">
         <h2 class="visually-hidden">Хит продаж</h2>
-        <ul class="hit-list">
-          <li class="catalog-hit-item">
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <img class="catalog-image" src="img/products/orange-ice-cream.png" width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="catalog-text">310<span>р/кг</span></p>
+            <p class="catalog-price">310р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
-          <li class="catalog-hit-item">
+          <li class="catalog-item">
             <img class="catalog-image" src="img/products/coffee-ice-cream.png" width="267" height="267"
             alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="catalog-text">380<span>р/кг</span></p>
+            <p class="catalog-price">380р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </li>
-          <li class="catalog-hit-item">
+          <li class="catalog-item">
             <img class="catalog-image" src="img/products/strawberry-ice-cream.png" width="267" height="267"
             alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="catalog-text">355<span>р/кг</span></p>
+            <p class="catalog-price">355р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
-          <li class="catalog-hit-item">
+          <li class="catalog-item">
             <img class="catalog-image" src="img/products/creme-brulee-ice-cream.png" width="267" height="267"
             alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="catalog-text">415<span>р/кг</span></p>
+            <p class="catalog-price">415р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
         </ul>
@@ -282,7 +286,7 @@
       <button class="button button-details" type="button" aria-label="Закрыть модальное окно">Х</button>     <!--кнопка закрывает форму-->
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="name" class="visually-hidden">Имя</label>
-        <input type="name" name="name" id="name" placeholder="Как вас зовут?">
+        <input name="name" id="name" placeholder="Как вас зовут?">
         <label for="email" class="visually-hidden">email</label>
         <input type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
         <textarea name="massage" id="massage" placeholder="Напишите что-нибудь..."

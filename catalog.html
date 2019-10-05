@@ -13,125 +13,132 @@
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
         </a>
   <!--навигация по сайту-->
-        <ul сlass="site-navigation-list">
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="catalog.html">Каталог</a>
-            <section class="site-navigation-dropdown dropdown">
-              <ul class="dropdown-list">                                            <!--добавил дроптаун-->
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Новинки</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Сливочное</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Щербеты</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Фруктовый лед</a>
-                </li>
-                <li class="dropdown-catalog-item">
-                  <a href="catalog.html">Мелорин</a>
-                </li>
-              </ul>
-            </section>
-          </li>
-          <li class="site-navigation-item">
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-navigation-item">
-            <a href="index.html">О компании</a>
-          </li>
-        </ul>
+        <section class="site-navigation">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+          <ul class="site-navigation-list">
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="catalog.html">Каталог</a>
+              <section class="site-navigation-dropdown dropdown">
+              <h2 class="visually-hidden">Категории</h2>
+                <ul class="dropdown-list">                                            <!--добавил дроптаун-->
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Новинки</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Щербеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="catalog.html">Мелорин</a>
+                  </li>
+                </ul>
+              </section>
+            </li>
+            <li class="site-navigation-item">
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-navigation-item">
+              <a href="index.html">О компании</a>
+            </li>
+          </ul>
+        </section>
   <!--юзер навигация-->
-        <ul class="user-navigation-list">
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#" area-label="Открыть окно поиска">Поиск</a>
-            <section class="dropdown dropdown-search">
-              <h2 class="visually-hidden">Поиск по сайту</h2>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <label for="search-field" class="visually-hidden">Поиск</label>
-                <input type="text" name="search" id="search-field" placeholder="Что ищем?">
-              </form>
-            </section>
-          </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#" area-label="Открыть окно входа">Вход</a>
-            <section class="dropdown dropdown-login">
-              <h2 class="visually-hidden">Вход</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <label for="entrance-field" class="visually-hidden">Вход</label>
-                <input type="email" name="email" id="entrance-field" placeholder="Электронная почта">
-                <input type="password" name="password" id="password-field" placeholder="Пароль">
-                <button type="submit" name="login">Войти</button>
-                <a class="dropdown-login-link" href="#">Забыли пароль?</a>
-                <a class="dropdown-registration-link" href="#">Новая регистрация</a>
-              </form>
-            </section>
-          </li>
-          <li сlass="user-navigation-item">
-            <section class="dropdown dropdown-cart">
-              <h2 class="visually-hidden">Корзина</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <a class="user-navigation-link" href="#" area-label="Открыть окно корзины">2 товара</a>
-                  <table сlass="dropdown-cart-table">
-                    <tr class="dropdown-cart-row">
-                      <td class="dropdown-cart-column">
-                        <button type="button" aria-label="убрать из корзины">X</button>
-                      </td>
-                      <td class="dropdown-cart-column">
-                        <img src="img/products/little-ice-cream-1.png"
-                        width="33" height="33" alt="апельсиновый джем">
-                      </td>
-                      <td class="dropdown-cart-column">
-                        Пломбир с апельсиновым джемом
-                      </td>
-                      <td class="dropdown-cart-column">
-                        1,5 кг х
-                      </td>
-                      <td class="dropdown-cart-column">
-                        200 руб.
-                      </td>
-                      <td class="dropdown-cart-column">
-                        300 руб.
-                      </td>
-                    </tr>
-                    <tr class="dropdown-cart-row">
-                      <td class="dropdown-cart-column">
-                        <button type="button" aria-label="убрать из корзины">X</button>
-                      </td>
-                      <td class="dropdown-cart-column">
-                        <img src="img/products/little-ice-cream-2.png"
-                        width="33" height="33" alt="апельсиновый джем">
-                      </td>
-                      <td class="dropdown-cart-column">
-                        Клубничный пломбир с присыпкой из белого шоколада
-                      </td>
-                      <td class="dropdown-cart-column">
-                        1,5 кг х
-                      </td>
-                      <td class="dropdown-cart-column">
-                        300 руб.
-                      </td>
-                      <td class="dropdown-cart-column">
-                        450 руб.
-                      </td>
-                    </tr>
-                    <tr class="dropdown-cart-row">
-                      <td class="dropdown-cart-per-price">
-                        Итого: 750 руб.
-                      </td>
-                    </tr>
-                  </table>
-                <button class="button-details" type="submit">Оформить заказ</button>
-              </form>
-            </section>
-          </li>
-        </ul>
+        <section class="user-navigation">
+        <h2 class="visually-hidden">Юзер навигация</h2>
+          <ul class="user-navigation-list">
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#" area-label="Открыть окно поиска">Поиск</a>
+              <section class="user-navigation-dropdown-search">
+                <h2 class="visually-hidden">Поиск по сайту</h2>
+                <form action="https://echo.htmlacademy.ru" method="get">
+                  <label for="search-field" class="visually-hidden">Поиск</label>
+                  <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                </form>
+              </section>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link" href="#" area-label="Открыть окно входа">Вход</a>
+              <section class="user-navigation-dropdown-login">
+                <h2 class="visually-hidden">Вход</h2>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <label for="entrance-field" class="visually-hidden">Вход</label>
+                  <input type="email" name="email" id="entrance-field" placeholder="Электронная почта">
+                  <input type="password" name="password" id="password-field" placeholder="Пароль">
+                  <button type="submit" name="login">Войти</button>
+                  <a class="dropdown-login-link" href="#">Забыли пароль?</a>
+                  <a class="dropdown-registration-link" href="#">Новая регистрация</a>
+                </form>
+              </section>
+            </li>
+            <li class="user-navigation-item">
+              <section class="user-navigation-dropdown-cart">
+                <h2 class="visually-hidden">Корзина</h2>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <a class="user-navigation-link" href="#" area-label="Открыть окно корзины">2 товара</a>
+                    <table class="dropdown-cart-table">
+                      <tr class="dropdown-cart-row">
+                        <td class="dropdown-cart-column">
+                          <button type="button" aria-label="убрать из корзины">X</button>
+                        </td>
+                        <td class="dropdown-cart-column">
+                          <img src="img/products/little-ice-cream-1.png"
+                          width="33" height="33" alt="апельсиновый джем">
+                        </td>
+                        <td class="dropdown-cart-column">
+                          Пломбир с апельсиновым джемом
+                        </td>
+                        <td class="dropdown-cart-column">
+                          1,5 кг х
+                        </td>
+                        <td class="dropdown-cart-column">
+                          200 руб.
+                        </td>
+                        <td class="dropdown-cart-column">
+                          300 руб.
+                        </td>
+                      </tr>
+                      <tr class="dropdown-cart-row">
+                        <td class="dropdown-cart-column">
+                          <button type="button" aria-label="убрать из корзины">X</button>
+                        </td>
+                        <td class="dropdown-cart-column">
+                          <img src="img/products/little-ice-cream-2.png"
+                          width="33" height="33" alt="апельсиновый джем">
+                        </td>
+                        <td class="dropdown-cart-column">
+                          Клубничный пломбир с присыпкой из белого шоколада
+                        </td>
+                        <td class="dropdown-cart-column">
+                          1,5 кг х
+                        </td>
+                        <td class="dropdown-cart-column">
+                          300 руб.
+                        </td>
+                        <td class="dropdown-cart-column">
+                          450 руб.
+                        </td>
+                      </tr>
+                      <tr class="dropdown-cart-row">
+                        <td class="dropdown-cart-per-price">
+                          Итого: 750 руб.
+                        </td>
+                      </tr>
+                    </table>
+                  <button class="button-details" type="submit">Оформить заказ</button>
+                </form>
+              </section>
+            </li>
+          </ul>
+        </section>
       </nav>
     </header>
 <!--основной контейнер сайта-->
-    <main сlass="page-content">
+    <main class="page-content">
   <!--выбор категории-->
     <h2 class="main-content-title">Сливочное мороженое</h2>
       <ul class="ice-cream-list">
@@ -146,158 +153,173 @@
         </li>
       </ul>
   <!--меню выбора по категории-->
-      <fieldset class="main-selection-sorting sorting">
-        <form class="filtration" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="sorting">
-            <label>Сортировка:</label>
-            <select name="sorting-popularity">
-              <option>по популярности</option>
-            </select>
-          </fieldset>
-          <fieldset class="sorting-price">
-            <label>Цена: 100 руб. - 500 руб.</label>
-              <input type="range" min="100" max="500" step="50">
-          </fieldset>
-          <fieldset class="sorting-percent">
-            <legend>Жирность:</legend>
-              <ul class="sorting-percent-list">
-                <li class="sorting-percent-item">
-                  <input type="radio" name="fat-content" id="zero-percent" value="0%">
+      <section class="filters">
+      <h2 class="visually-hidden">Фильтр</h2>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-group">
+            <legend class="filter-title visually-hidden">Фильтр</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <fieldset class="sorting">
+                    <label>Сортировка:</label>
+                    <select name="sorting-popularity">
+                      <option>по популярности</option>
+                    </select>
+                  </fieldset>
                 </li>
-                <li class="sorting-percent-item">
-                  <label for="zero-percent">0%</label>
+                <li class="filter-item">
+                  <fieldset class="sorting-price">
+                    <label>Цена: 100 руб. - 500 руб.</label>
+                    <input type="range" min="100" max="500" step="50">
+                  </fieldset>
                 </li>
-                <li class="sorting-percent-item">
-                  <input type="radio" name="fat-content" id="up-to-ten-percent" value="up-to-10%" checked>
+                <li class="filter-item">
+                  <fieldset class="sorting-percent">
+                    <legend class="sorting-percent-title">Жирность:</legend>
+                      <ul class="sorting-percent-list">
+                        <li class="sorting-percent-item">
+                          <input type="radio" name="fat-content" id="zero-percent" value="0%">
+                        </li>
+                        <li class="sorting-percent-item">
+                          <label for="zero-percent">0%</label>
+                        </li>
+                        <li class="sorting-percent-item">
+                          <input type="radio" name="fat-content" id="up-to-ten-percent" value="up-to-10%" checked>
+                        </li>
+                        <li class="sorting-percent-item">
+                          <label for="up-to-ten-percent">до 10%</label>
+                        </li>
+                        <li class="sorting-percent-item">
+                          <input type="radio" name="fat-content" id="up-to-thirty-percent" value="up-to-30%">
+                        </li>
+                        <li class="sorting-percent-item">
+                          <label for="up-to-thirty-percent">до 30%</label>
+                        </li>
+                        <li class="sorting-percent-item">
+                          <input type="radio" name="fat-content" id="over-thirty-percent" value="over-30%">
+                        </li>
+                        <li class="sorting-percent-item">
+                          <label for="over-thirty-percent">свыше 30%</label>
+                        </li>
+                      </ul>
+                  </fieldset>
                 </li>
-                <li class="sorting-percent-item">
-                  <label for="up-to-ten-percent">до 10%</label>
-                </li>
-                <li class="sorting-percent-item">
-                  <input type="radio" name="fat-content" id="up-to-thirty-percent" value="up-to-30%">
-                </li>
-                <li class="sorting-percent-item">
-                  <label for="up-to-thirty-percent">до 30%</label>
-                </li>
-                <li class="sorting-percent-item">
-                  <input type="radio" name="fat-content" id="over-thirty-percent" value="over-30%">
-                </li>
-                <li class="sorting-percent-item">
-                  <label for="over-thirty-percent">свыше 30%</label>
+                <li class="filter-item">
+                  <fieldset class="sorting-ingredient">
+                    <legend class="sorting-ingredient-title">Наполнители:</legend>
+                      <ul class="sorting-ingredient-list">
+                        <li class="sorting-ingredient-item">
+                          <input type="checkbox" name="chocolads" id="chocolads-field" checked>
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <label for="chocolads-field">шоколадные</label>
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <input type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <label for="sugar-powders-field">сахарные присыпки</label>
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <input type="checkbox" name="fruits" id="fruits-field">
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <label for="fruits-field">фрукты</label>
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <input type="checkbox" name="syrups" id="syrups-field">
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <label for="syrups-field">сиропы</label>
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <input type="checkbox" name="jams" id="jams-field">
+                        </li>
+                        <li class="sorting-ingredient-item">
+                          <label for="jams-field">джемы</label>
+                        </li>
+                      </ul>
+                  </fieldset>
                 </li>
               </ul>
-          </fieldset>
-          <fieldset class="sorting-ingredient">
-            <legend>Наполнители:</legend>
-              <ul class="sorting-ingredient-list">
-                <li class="sorting-ingredient-item">
-                  <input type="checkbox" name="chocolads" id="chocolads-field" checked>
-                </li>
-                <li class="sorting-ingredient-item">
-                  <label for="chocolads-field">шоколадные</label>
-                </li>
-                <li class="sorting-ingredient-item">
-                  <input type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
-                </li>
-                <li class="sorting-ingredient-item">
-                  <label for="sugar-powders-field">сахарные присыпки</label>
-                </li>
-                <li class="sorting-ingredient-item">
-                  <input type="checkbox" name="fruits" id="fruits-field">
-                </li>
-                <li class="sorting-ingredient-item">
-                  <label for="fruits-field">фрукты</label>
-                </li>
-                <li class="sorting-ingredient-item">
-                  <input type="checkbox" name="syrups" id="syrups-field">
-                </li>
-                <li class="sorting-ingredient-item">
-                  <label for="syrups-field">сиропы</label>
-                </li>
-                <li class="sorting-ingredient-item">
-                  <input type="checkbox" name="jams" id="jams-field">
-                </li>
-                <li class="sorting-ingredient-item">
-                  <label for="jams-field">джемы</label>
-                </li>
-              </ul>
-          </fieldset>
             <button class="button-outline-color" type="button">Применить</button>
+          </fieldset>
         </form>
-      </fieldset>
+      </section>
   <!--список ассортимента-->
       <section class="catalog">
-        <ul сlass="catalog-list">
+      <h2 class="visually-hidden">Ассортимент</h2>
+        <ul class="catalog-list">
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/orange-ice-cream.png" width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="ice-cream-price">310<span>р/кг</span></p>
+            <p class="catalog-price">310р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/coffee-ice-cream.png" width="267" height="267"
             alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="ice-cream-price">380<span>р/кг</span></p>
+            <p class="catalog-price">380р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/strawberry-ice-cream.png" width="267" height="267"
             alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="ice-cream-price">355<span>р/кг</span></p>
+            <p class="catalog-price">355р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/creme-brulee-ice-cream.png" width="267" height="267"
             alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="catalog-text">415<span>р/кг</span></p>
+            <p class="catalog-price">415р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/lingonberry-ice-cream.png" width="267" height="267"
             alt="Сливочное с брусничным джемом">
-            <p class="catalog-text">325<span>р/кг</span></p>
+            <p class="catalog-price">325р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное с брусничным джемом</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/blueberry-ice-cream.png" width="267" height="267"
             alt="Сливочно-черничное с цельными ягодами черники">
-            <p class="catalog-text">410<span>р/кг</span></p>
+            <p class="catalog-price">410р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/lemon-ice-cream.png" width="267" height="267"
             alt="Сливочно-лимонное с карамельной присыпкой">
-            <p class="catalog-text">375<span>р/кг</span></p>
+            <p class="catalog-price">375р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/milk-chocolate-ice-cream.png" width="267" height="267"
             alt="Сливочное с шоколадной стружкой">
-            <p class="catalog-text">320<span>р/кг</span></p>
+            <p class="catalog-price">320р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное с шоколадной стружкой</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/vanilla-ice-cream.png" width="267" height="267"
             alt="Сливочно-ванильное с кусочками шоколада">
-            <p class="catalog-text">440<span>р/кг</span></p>
+            <p class="catalog-price">440р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/menthol-ice-cream.png" width="267" height="267"
             alt="Сливочноe с ментоловым сиропом">
-            <p class="catalog-text">435<span>р/кг</span></p>
+            <p class="catalog-price">435р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочноe с ментоловым сиропом</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/black-chocolate-ice-cream.png" width="267" height="267"
             alt="Сливочное с кусочками черного шоколада">
-            <p class="catalog-text">355<span>р/кг</span></p>
+            <p class="catalog-price">355р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное с кусочками черного шоколада</a>
           </li>
           <li class="catalog-item">
             <img class="catalog-image" src="img/products/peppermint-ice-cream.png" width="267" height="267"
             alt="Сливочное с мятным сиропом">
-            <p class="catalog-text">420<span>р/кг</span></p>
+            <p class="catalog-price">420р/<span>кг</span></p>
             <a class="catalog-link" href="#">Сливочное с мятным сиропом</a>
           </li>
         </ul>
@@ -320,7 +342,7 @@
   <!--социальные сети-->
       <section class="page-footer-social social">
         <h2 class="visually-hidden">Глейси в соцсетях</h2>
-        <ul сlass="social-list">
+        <ul class="social-list">
           <li class="social-item">
             <a href="https://twitter.com"><span class="visually-hidden">Мы в Твиттер</span>
               <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
@@ -358,10 +380,10 @@
         </ul>
       </section>
   <!--копирайтер-->
-      <div сlass="page-footer-copyright copyright">
+      <div class="page-footer-copyright copyright">
         <a class="copyright-link-image" href="https://htmlacademy.ru/intensive/htmlcss">
           <img class="copyright-image" src="img/icons/logo-htmlacademy.svg" width="108" height="39" alt="HTMLAcademy"></a>
-        <p сlass="copyright-text">
+        <p class="page-footer-text">
           Сделано в<a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a>2019
         </p>
       </div>
