@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: local('Roboto'),
        url('/fonts/web/robotobold.woff2') format('woff2'),
        url('/fonts/web/robotobold.woff') format('woff');
@@ -19,42 +19,10 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: local('Roboto'),
        url('/fonts/web/robotomedium.woff2') format('woff2'),
        url('/fonts/web/robotomedium.woff') format('woff');
-}
-
-body {
-  margin: 0;
-
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: #849d8f;
-  /*color: #ffffff;*/
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.feedback {
-  color: block;
-}
-
-.feedback ul {
-  list-style: none;
-}
-
-.feedback p {
-  margin-bottom: inherit;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 *, *:before *:after {
@@ -72,8 +40,64 @@ html {
   overflow: hidden;
 }
 
+body {
+  margin: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #849d8f;
+  /*color: #ffffff;*/
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.feedback {
+  color: black;
+}
+.feedback p {
+  margin-bottom: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+/*шапка*/
+  /*панель навигации*/
+.page-header a {
+  color: #ffffff;
+}
+.page-header-text {
+  font-size: 14px;
+  color: #ffffff;
+}
+.page-header-link {
+  font-size: 22px;
+}
+
+  /*выбор категории*/
+.page-content a {
+  color: #ffffff;
+}
+.page-content-title {
+  font-size: 35px;
+}
+.ice-cream-item {
+  font-size: 14px;
+}
+
+
 
 /*навигация по сайту*/
+.site-navigation a {
+  color: #ffffff;
+}
+.site-navigation a:hover {
+  color: #323232;
+}
 .site-navigation {
   color: #ffffff;
 }
@@ -81,6 +105,7 @@ html {
   font-size: 16px;
 }
 .dropdown-list {
+  /*display: none;*/
   font-size: 14px;
 }
 
@@ -91,11 +116,15 @@ html {
 .user-navigation-link {
   font-size: 14px;
 }
-input::placeholder {
+.user-navigation input::placeholder {
   font-size: 14px;
 }
 .button-come {
   font-size: 18px;
+  color: #ffffff;
+}
+.user-navigation a {
+  color: #323232;
 }
 .dropdown-login-link {
   font-size: 13px;
@@ -103,25 +132,26 @@ input::placeholder {
 .dropdown-registration-link {
   font-size: 13px;
 }
+.dropdown-cart-column {
+  font-size: 13px;
+  color: #323232;
+}
+.dropdown-cart-column span {
+  color: #999999;
+}
+.dropdown-cart-per-price {
+  font-size: 15px;
+  color: #323232;
+}
 
 /*основной контейнер сайта*/
-.page-content { }
-
-.page-content-text {
-  font-size: 14px;
-}
-.page-content-link {
-  font-size: 22px;
-}
-
   /*специальное предложение*/
-.index-columns { }
-
-.special-offer {
+.index-columns {
   color: #ffffff;
 }
-.special-offer-stock { }
-
+.index-columns a {
+  color: #ffffff;
+}
 .special-offer-stock-title {
   font-size: 35px;
 }
@@ -130,13 +160,14 @@ input::placeholder {
 }
 
   /*хит продаж*/
-.catalog {
+.catalog-link a {
   color: #ffffff;
 }
 .catalog-price {
   font-size: 45px;
+  color: #ffffff;
 }
-span {
+.catalog-price span {
   font-size: 30px;
 }
 
@@ -152,21 +183,27 @@ span {
 }
 
   /*блог*/
-.blog {
+.advice-blog {
   color: #323232;
 }
-.blog-title {
+.advice-blog a {
+  color: #323232;
+  text-decoration: underline;
+}
+.advice-blog-title {
   font-size: 16px;
 }
-.blog-link {
+.advice-blog-link {
   font-size: 24px;
 }
 
   /*рассылка*/
-.subscription { }
-
 .subscription-text {
   font-size: 16px;
+  color: #5a5a5a;
+}
+.subscription input::placeholder {
+  font-size: 14px;
 }
 .button-details {
   font-size: 18px;
@@ -174,8 +211,15 @@ span {
 }
 
   /*контактная информация*/
-.contact { }
-
+.contact {
+  color: #323232;
+}
+a.button-about-us {
+  color: #ffffff;
+}
+a.contact-details-link {
+  color: #323232;
+}
 .contact-details-address {
   font-size: 18px;
 }
@@ -187,32 +231,35 @@ span {
 }
 
 /*подвал*/
-.page-footer { }
-
   /*социальные сети*/
-.social { }
-
 .button-outline-color {
   width: 32px;
   height: 32px;
 }
 
   /*документация*/
-.company-documentation { }
-
+.company-documentation a {
+  color: #ffffff;
+}
 .company-documentation-list {
   font-size: 13px;
 }
 
   /*копирайтер*/
-.copyright { }
-
+.copyright a {
+  color: #ffffff;
+}
+.copyright-text {
+  color: #ffffff;
+}
 .copyright-text {
   font-size: 12px;
 }
 
 /*модалка*/
-.feedback { }
+.feedback {
+  /*display: none;*/
+}
 
 .feedback-text {
   font-size: 24px;

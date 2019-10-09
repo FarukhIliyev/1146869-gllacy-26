@@ -5,13 +5,20 @@
     <title>Магазин мороженного "Gllacy"</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <style type="text/css">
+      .reset-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
 <!--шапка-->
   <!--панель навигации-->
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="page-header-logo">
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
         </a>
   <!--навигация по сайту-->
@@ -85,13 +92,13 @@
           </ul>
         </section>
       </nav>
+    <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
+      <p class="page-header-text">С 10 до 20, ежедневно
+        <a class="page-header-link" href="tel:+88124502525">8 812 450-25-25</a>
+      </p>
     </header>
 <!--основной контейнер сайта-->
     <main class="page-content">
-    <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
-      <p class="page-content-text">С 10 до 20, ежедневно
-        <a class="page-content-link" href="tel:+88124502525">8 812 450-25-25</a>
-      </p>
   <!--слайдер-->
   <!--
       <div class="slider">
@@ -152,25 +159,25 @@
             <li class="catalog-item">
               <img class="catalog-image" src="img/products/orange-ice-cream.png" width="267" height="267"
               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="catalog-price">310р/<span>кг</span></p>
+              <p class="catalog-price">310₽/<span>кг</span></p>
               <a class="catalog-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </li>
             <li class="catalog-item">
               <img class="catalog-image" src="img/products/coffee-ice-cream.png" width="267" height="267"
               alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="catalog-price">380р/<span>кг</span></p>
+              <p class="catalog-price">380₽/<span>кг</span></p>
               <a class="catalog-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             </li>
             <li class="catalog-item">
               <img class="catalog-image" src="img/products/strawberry-ice-cream.png" width="267" height="267"
               alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="catalog-price">355р/<span>кг</span></p>
+              <p class="catalog-price">355₽/<span>кг</span></p>
               <a class="catalog-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </li>
             <li class="catalog-item">
               <img class="catalog-image" src="img/products/creme-brulee-ice-cream.png" width="267" height="267"
               alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="catalog-price">415р/<span>кг</span></p>
+              <p class="catalog-price">415₽/<span>кг</span></p>
               <a class="catalog-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </li>
           </ul>
@@ -203,9 +210,9 @@
           </ul>
       </section>
   <!--блог-->
-      <article class="blog">
-        <h2 class="blog-title">Новое в нашем блоге</h2>
-          <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      <article class="advice-blog">
+        <h2 class="advice-blog-title">Новое в нашем блоге</h2>
+          <a class="advice-blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
   <!--рассылка-->
       <section class="subscription">
