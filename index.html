@@ -5,18 +5,11 @@
     <title>Магазин мороженного "Gllacy"</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <style type="text/css">
-      .reset-list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-    </style>
   </head>
   <body>
 <!--шапка-->
   <!--панель навигации-->
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="page-navigation">
         <a class="page-header-logo">
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
@@ -24,7 +17,7 @@
   <!--навигация по сайту-->
         <section class="site-navigation">
           <h2 class="visually-hidden">Навигация по сайту</h2>
-            <ul class="site-navigation-list">
+            <ul class="site-navigation-list reset-list">
               <li class="site-navigation-item">
                 <a class="site-navigation-link" href="catalog.html">Каталог</a>
                   <section class="site-navigation-dropdown dropdown">
@@ -59,10 +52,10 @@
   <!--юзер навигация-->
         <section class="user-navigation">
           <h2 class="visually-hidden">Юзер навигация</h2>
-            <ul class="user-navigation-list">
+            <ul class="user-navigation-list reset-list">
               <li class="user-navigation-item">
                 <a class="user-navigation-link" href="#" aria-label="Открыть окно поиска"></a>
-                  <section class="user-navigation-dropdown-search">
+                  <section class="user-navigation-dropdown dropdown-search">
                     <h2 class="visually-hidden">Поиск по сайту</h2>
                       <form action="https://echo.htmlacademy.ru" method="get">
                         <label for="search-field" class="visually-hidden">Поиск</label>
@@ -72,7 +65,7 @@
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link" href="#" aria-label="Открыть окно входа">Вход</a>
-                  <section class="user-navigation-dropdown-login">
+                  <section class="user-navigation-dropdown dropdown-login">
                     <h2 class="visually-hidden">Вход</h2>
                       <form action="https://echo.htmlacademy.ru" method="post">
                         <input type="email" name="email" id="entrance-field" placeholder="email@example.com">
@@ -85,7 +78,7 @@
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link" href="#">Пусто</a>
-                  <section class="user-navigation-dropdown-cart">
+                  <section class="user-navigation-dropdown dropdown-cart">
                     <h2 class="visually-hidden">Корзина</h2>
                 </section>
               </li>
@@ -93,16 +86,18 @@
         </section>
       </nav>
     <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
-      <p class="page-header-text">С 10 до 20, ежедневно
-        <a class="page-header-link" href="tel:+88124502525">8 812 450-25-25</a>
-      </p>
+      <div class="page-header-contact">
+        <p class="page-header-contact-text">С 10 до 20, ежедневно
+          <a class="page-header-contact-link" href="tel:+88124502525">8 812 450-25-25</a>
+        </p>
+      </div>
     </header>
 <!--основной контейнер сайта-->
-    <main class="page-content">
+    <main class="page-content container">
   <!--слайдер-->
   <!--
       <div class="slider">
-        <ul class="slider-list">
+        <ul class="slider-list reset-list">
           <li class="slider-item">
             <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
             <img class="slider-image" src="img/products/slide-one-raspberry-jam.png"
@@ -124,7 +119,7 @@
         </ul>
       </div>
       <div class="slider">
-        <ul class="slider-list">
+        <ul class="slider-list reset-list">
           <li><a class="slider-link-active">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
@@ -155,7 +150,7 @@
   <!--хит продаж-->
       <section class="catalog">
         <h2 class="visually-hidden">Хит продаж</h2>
-          <ul class="catalog-list">
+          <ul class="catalog-list reset-list">
             <li class="catalog-item">
               <img class="catalog-image" src="img/products/orange-ice-cream.png" width="267" height="267"
               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -187,20 +182,20 @@
         <h2 class="advantages-title">Магазин Глэйси — это онлайн- и
             офлайн-магазин по продаже мороженого собственного
             производства на развес</h2>
-          <ul class="advantages-list">
+          <ul class="advantages-list reset-list">
             <li class="advantages-item">
               Все наше мороженое изготавливается на собственном производстве,
               с использованием современного оборудования и проверенных временем
               технологий.
             </li>
             <li class="advantages-item">
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств
+              и компаний, с которыми нас связывает долговременное сотрудничество.
+            </li>
+            <li class="advantages-item">
               Для приготовления мороженого используются настоящие сливки и молоко
               высочайшего качества. Все дополнительные ингредиенты и добавки произведены
               из натурального, экологически чистого сырья.
-            </li>
-            <li class="advantages-item">
-              Закупка ингредиентов  производится только у проверенных фермерских хозяйств
-              и компаний, с которыми нас связывает долговременное сотрудничество.
             </li>
             <li class="advantages-item">
               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
@@ -209,48 +204,54 @@
             </li>
           </ul>
       </section>
-  <!--блог-->
-      <article class="advice-blog">
-        <h2 class="advice-blog-title">Новое в нашем блоге</h2>
-          <a class="advice-blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </article>
+  <!--блог о рецептах-->
+      <section class="recipes">
+        <h2 class="visually-hidden">Мастер Класс от Глейси</h2>
+          <article class="recipes-advice-blog">
+            <h2 class="recipes-advice-blog-title">Новое в нашем блоге</h2>
+              <a class="recipes-advice-blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </article>
   <!--рассылка-->
-      <section class="subscription">
-        <h2 class="visually-hidden">Рассылка</h2>
-          <p class="subscription-text">
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-            всякой ненужной ерунды. Честно =)
-          </p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="email-field" class="visually-hidden">Рассылка</label>
-            <input type="email" name="email" id="email-field" placeholder="email@example.com">
-            <button class="button-details" type="submit">Отправить</button>
-          </form>
+          <section class="recipes-subscription">
+            <h2 class="visually-hidden">Рассылка</h2>
+              <p class="recipes-subscription-text">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+                всякой ненужной ерунды. Честно =)
+              </p>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="email-field" class="visually-hidden">Рассылка</label>
+                <input type="email" name="email" id="email-field" placeholder="email@example.com">
+                <button class="button-details" type="submit">Отправить</button>
+              </form>
+          </section>
       </section>
   <!--контактная информация-->
-      <section class="contact">
-        <h2 class="visually-hidden">Контакты</h2>
-          <div class="contact-details">
-            <p class="contact-details-text">
-              Адрес главного офиса и офлайн магазина:
-            </p>
-            <address class="contact-details-address">ул.Большая Конюшенная 15/8, Санкт-Петербург</address>
-            <p class="contact-details-text">
-              Для заказов по телефону:
-              <a class="contact-details-link" href="tel:+88124502525">8 812 450-25-25</a>
-                (с 10 до 20 ежедневно)
-            </p>
-            <a class="button button-about-us" href="#">Форма обратной связи</a>
-          </div>
-      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Схема проезда</h2>
+          <section class="map-contact">
+            <h2 class="visually-hidden">Контакты</h2>
+              <div class="map-contact-details">
+                <p class="map-contact-details-text">
+                  Адрес главного офиса и офлайн магазина:
+                </p>
+                <address class="map-contact-details-address">ул.Большая Конюшенная 15/8, Санкт-Петербург</address>
+                <p class="map-contact-details-text">
+                  Для заказов по телефону:
+                  <a class="map-contact-details-link" href="tel:+88124502525">8 812 450-25-25</a>
+                    (с 10 до 20 ежедневно)
+                </p>
+                <a class="button button-about-us" href="#">Форма обратной связи</a>
+              </div>
+          </section>
+        </section>
     </main>
 <!--подвал-->
   <!--социальные сети-->
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="page-footer-social social">
         <h2 class="visually-hidden">Глейси в соцсетях</h2>
-          <ul class="social-list">
+          <ul class="social-list reset-list">
             <li class="social-item">
               <a class="button button-outline-color" href="https://twitter.com"><span class="visually-hidden">Мы в Твиттер</span>
                 <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
@@ -272,7 +273,7 @@
   <!--документация-->
       <section class="page-footer-company-documentation company-documentation">
         <h2 class="visually-hidden">документация компании Глейси</h2>
-          <ul class="company-documentation-list">
+          <ul class="company-documentation-list reset-list">
             <li class="company-documentation-item">
               <a href="#">Для поставщиков</a>
             </li>

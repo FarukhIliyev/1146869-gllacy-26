@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+
   src: local('Roboto'),
        url('/fonts/web/roboto.woff2') format('woff2'),
        url('/fonts/web/roboto.woff') format('woff');
@@ -9,42 +10,54 @@
 
 @font-face {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
-  src: local('Roboto'),
-       url('/fonts/web/robotobold.woff2') format('woff2'),
-       url('/fonts/web/robotobold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
+
   src: local('Roboto'),
        url('/fonts/web/robotomedium.woff2') format('woff2'),
        url('/fonts/web/robotomedium.woff') format('woff');
 }
 
-*, *:before *:after {
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+
+  src: local('Roboto'),
+       url('/fonts/web/robotobold.woff2') format('woff2'),
+       url('/fonts/web/robotobold.woff') format('woff');
+}
+
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
 .visually-hidden {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+
+  border: 0;
+}
+.reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 body {
   margin: 0;
 
-  font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #849d8f;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
   /*color: #ffffff;*/
 }
 
@@ -65,53 +78,85 @@ a {
 html {
   box-sizing: border-box;
 }
-/*шапка*/
-  /*панель навигации*/
+/*----------------------------ширина главных блоков---------------------------*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*-----------------------------------шапка------------------------------------*/
+  /*-----------------------------панель навигации-----------------------------*/
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+.page-header-logo {
+  display: flex;
+  width: 154px;
+}
 .page-header a {
   color: #ffffff;
 }
-.page-header-text {
-  font-size: 14px;
-  color: #ffffff;
+.page-header-contact {
+  display: block;
 }
-.page-header-link {
+.page-header-contact-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 166px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.page-header-contact-link {
   font-size: 22px;
 }
 
-  /*выбор категории*/
-.page-content a {
+  /*-----------------------------навигация по сайту-----------------------------*/
+.site-navigation {
+  display: flex;
+  width: 400px;
   color: #ffffff;
 }
-.page-content-title {
-  font-size: 35px;
-}
-.ice-cream-item {
-  font-size: 14px;
-}
-
-
-
-/*навигация по сайту*/
 .site-navigation a {
   color: #ffffff;
 }
 .site-navigation a:hover {
   color: #323232;
 }
-.site-navigation {
-  color: #ffffff;
+.site-navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .site-navigation-item {
   font-size: 16px;
 }
 .dropdown-list {
-  /*display: none;*/
+  display: none;
   font-size: 14px;
 }
 
-/*юзер навигация*/
+  /*-------------------------------юзер навигация-------------------------------*/
 .user-navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 245px;
   color: #ffffff;
+}
+.user-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-navigation-dropdown {
+  display: none;
 }
 .user-navigation-link {
   font-size: 14px;
@@ -120,8 +165,8 @@ html {
   font-size: 14px;
 }
 .button-come {
-  font-size: 18px;
   color: #ffffff;
+  font-size: 18px;
 }
 .user-navigation a {
   color: #323232;
@@ -133,142 +178,313 @@ html {
   font-size: 13px;
 }
 .dropdown-cart-column {
-  font-size: 13px;
   color: #323232;
+  font-size: 13px;
 }
 .dropdown-cart-column span {
   color: #999999;
 }
 .dropdown-cart-per-price {
-  font-size: 15px;
   color: #323232;
+  font-size: 15px;
+}
+/*----------------------------------слайдер-----------------------------------*/
+/*----------------------фильтр меню выбора по категории-----------------------*/
+
+/*--------------------------основной контейнер сайта--------------------------*/
+  /*----------------------------выбор категории-------------------------------*/
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-content a {
+  color: #ffffff;
+}
+.page-content-title {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+}
+.ice-cream-item {
+  font-size: 14px;
 }
 
-/*основной контейнер сайта*/
-  /*специальное предложение*/
+  /*--------------------------специальное предложение-------------------------*/
 .index-columns {
+  display: flex;
   color: #ffffff;
+}
+.special-offer {
+  display: flex;
+  width: 1200px;
+}
+.special-offer-stock {
+  display: block;
+  width: 560px;
+}
+.special-offer-stock-title {
+  width: 320px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.special-offer-stock-text {
+  width: 512px;
+  font-size: 18px;
 }
 .index-columns a {
   color: #ffffff;
 }
-.special-offer-stock-title {
-  font-size: 35px;
-}
-.special-offer-stock-text {
-  font-size: 18px;
-}
 
-  /*хит продаж*/
+  /*--------------------------------хит продаж--------------------------------*/
+.catalog {
+  display: flex;
+  align-content: center;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-item {
+  display: block;
+  margin: 10px;
+}
+.catalog-image {
+  display: block;
+  width: 270px;
+  margin-bottom: 15px;
+}
+.catalog-link {
+  display: block;
+  width: 252px;
+}
 .catalog-link a {
+  display: block;
+  width: 250px;
   color: #ffffff;
 }
 .catalog-price {
-  font-size: 45px;
+  display: flex;
+  width: 160px;
   color: #ffffff;
+  font-size: 45px;
+  font-weight: 500;
 }
 .catalog-price span {
+  display: block;
   font-size: 30px;
 }
 
-  /*описание преимущества*/
+  /*---------------------------------пагинация--------------------------------*/
+.catalog-pagination {
+  display: block;
+  width: 1200px;
+}
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+  /*---------------------------описание преимущества--------------------------*/
 .advantages {
+  display: flex;
+  flex-wrap: wrap;
   color: #323232;
 }
 .advantages-title {
+  display: block;
+  width: 1008px;
   font-size: 24px;
+  font-weight: 400;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .advantages-item {
+  display: block;
+  justify-content: flex-start;
+  width: 476px;
+  margin-bottom: 10px;
+  margin-right: 93px;
   font-size: 16px;
 }
 
-  /*блог*/
-.advice-blog {
+  /*-------------------------------блог о рецептах----------------------------*/
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipes-advice-blog {
+  display: block;
+  flex-wrap: wrap;
+  width: 560px;
   color: #323232;
 }
-.advice-blog a {
-  color: #323232;
+.recipes-advice-blog a {
+  display: block;
   text-decoration: underline;
+  color: #323232;
 }
-.advice-blog-title {
+.recipes-advice-blog-title {
+  display: block;
+  width: 164px;
   font-size: 16px;
 }
-.advice-blog-link {
+.recipes-advice-blog-link {
+  display: block;
+  width: 285px;
   font-size: 24px;
+  font-weight: 500;
 }
 
-  /*рассылка*/
-.subscription-text {
-  font-size: 16px;
-  color: #5a5a5a;
+  /*---------------------------------рассылка---------------------------------*/
+.recipes-subscription {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
 }
-.subscription input::placeholder {
+.recipes-subscription-text {
+  display: block;
+  width: 505px;
+
+  color: #5a5a5a;
+  font-size: 16px;
+}
+.recipes-subscription input::placeholder {
+  display: block;
   font-size: 14px;
 }
 .button-details {
-  font-size: 18px;
   color: #ffffff;
+  font-size: 18px;
 }
 
-  /*контактная информация*/
-.contact {
+  /*--------------------------контактная информация---------------------------*/
+.map {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+}
+.map-contact {
+  display: flex;
+  width: 303px;
   color: #323232;
+}
+.map-contact-details {
+  display: block;
+  flex-wrap: wrap;
+  width: 220px;
 }
 a.button-about-us {
+  display: block;
+  justify-content: center;
   color: #ffffff;
+  font-size: 18px;
 }
-a.contact-details-link {
+a.map-contact-details-link {
   color: #323232;
 }
-.contact-details-address {
+.map-contact-details-address {
   font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
 }
-.contact-details-text {
+.map-contact-details-text {
+  display: block;
+  flex-wrap: wrap;
+  width: 172px;
   font-size: 14px;
 }
-.contact-details-link {
+.map-contact-details-link {
   font-size: 18px;
+  font-weight: 500;
 }
 
-/*подвал*/
-  /*социальные сети*/
+/*-----------------------------------подвал-----------------------------------*/
+  /*-----------------------------социальные сети------------------------------*/
+.page-footer {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.social {
+  display: block;
+  width: 185px;
+  height: 42px;
+}
+.social-list {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+}
 .button-outline-color {
   width: 32px;
   height: 32px;
 }
 
-  /*документация*/
+  /*------------------------------документация--------------------------------*/
 .company-documentation a {
   color: #ffffff;
 }
+.company-documentation {
+  display: block;
+  width: 300px;
+  height: 35px;
+}
 .company-documentation-list {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 13px;
 }
+.company-documentation-item {
+  display: flex;
+  padding-right: 10px;
 
-  /*копирайтер*/
+}
+
+  /*-------------------------------копирайтер---------------------------------*/
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  width: 192px;
+}
+.copyright-link-image {
+  display: block;
+}
+.copyright-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #ffffff;
+}
 .copyright a {
   color: #ffffff;
 }
-.copyright-text {
-  color: #ffffff;
-}
-.copyright-text {
-  font-size: 12px;
+.copyright-text a {
+  display: block;
 }
 
-/*модалка*/
+/*---------------------------------модалка------------------------------------*/
 .feedback {
   /*display: none;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
 }
-
 .feedback-text {
+  display: block;
   font-size: 24px;
+  font-weight: 500px;
 }
 .feedback input::placeholder,
 .feedback textarea::placeholder {
+  display: block;
   font-size: 16px;
 }
 .button-feedback {
-  font-size: 18px;
   color: #ffffff;
+  font-size: 18px;
 }

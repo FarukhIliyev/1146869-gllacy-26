@@ -5,18 +5,11 @@
     <title>Каталог | Магазин мороженного "Gllacy"</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <style type="text/css">
-      .reset-list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-    </style>
   </head>
   <body>
 <!--шапка-->
   <!--панель навигации-->
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="page-navigation">
         <a class="page-header-logo" href="index.html">
           <img src="img/icons/logo.svg" width="154" height="64" alt="Глейси">
@@ -24,7 +17,7 @@
   <!--навигация по сайту-->
         <section class="site-navigation">
           <h2 class="visually-hidden">Навигация по сайту</h2>
-            <ul class="site-navigation-list">
+            <ul class="site-navigation-list reset-list">
               <li class="site-navigation-item">
                 <a class="site-navigation-link" href="catalog.html">Каталог</a>
                   <section class="site-navigation-dropdown dropdown">
@@ -59,10 +52,10 @@
   <!--юзер навигация-->
         <section class="user-navigation">
           <h2 class="visually-hidden">Юзер навигация</h2>
-            <ul class="user-navigation-list">
+            <ul class="user-navigation-list reset-list">
               <li class="user-navigation-item">
                 <a class="user-navigation-link" href="#" aria-label="Открыть окно поиска"></a>
-                  <section class="user-navigation-dropdown-search">
+                  <section class="user-navigation-dropdown dropdown-search">
                     <h2 class="visually-hidden">Поиск по сайту</h2>
                       <form action="https://echo.htmlacademy.ru" method="get">
                         <label for="search-field" class="visually-hidden">Поиск</label>
@@ -72,12 +65,11 @@
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link" href="#" aria-label="Открыть окно входа">Вход</a>
-                  <section class="user-navigation-dropdown-login">
+                  <section class="user-navigation-dropdown dropdown-login">
                     <h2 class="visually-hidden">Вход</h2>
                       <form action="https://echo.htmlacademy.ru" method="post">
-                        <label for="entrance-field" class="visually-hidden">Вход</label>
                         <input type="email" name="email" id="entrance-field" placeholder="email@example.com">
-                        <input type="password" name="password" id="password-field" placeholder="Пароль">
+                        <input type="password" name="password" id="password-field" placeholder="password">
                         <button class="button button-come" type="submit" name="login">Войти</button>
                         <a class="dropdown-login-link" href="#">Забыли пароль?</a>
                         <a class="dropdown-registration-link" href="#">Новая регистрация</a>
@@ -86,7 +78,7 @@
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link" href="#" aria-label="Открыть окно корзины">2 товара</a>
-                  <section class="user-navigation-dropdown-cart">
+                  <section class="user-navigation-dropdown dropdown-cart">
                     <h2 class="visually-hidden">Корзина</h2>
                       <form action="https://echo.htmlacademy.ru" method="post">
                         <table class="dropdown-cart-table">
@@ -146,15 +138,17 @@
         </section>
       </nav>
     <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
-      <p class="page-header-text">С 10 до 20, ежедневно
-        <a class="page-header-link" href="tel:+88124502525">8 812 450-25-25</a>
-      </p>
+      <div class="page-header-contact">
+        <p class="page-header-contact-text">С 10 до 20, ежедневно
+          <a class="page-header-contact-link" href="tel:+88124502525">8 812 450-25-25</a>
+        </p>
+      </div>
     </header>
 <!--основной контейнер сайта-->
   <!--выбор категории-->
-    <main class="page-content">
+    <main class="page-content container">
       <h2 class="page-content-title">Сливочное мороженое</h2>
-        <ul class="ice-cream-list">
+        <ul class="ice-cream-list reset-list">
           <li class="ice-cream-item">
             <a href="index.html">Главная</a>
           </li>
@@ -165,13 +159,13 @@
             <a href="#">Сливочное</a>
           </li>
         </ul>
-  <!--меню выбора по категории-->
+  <!--фильтр меню выбора по категории-->
   <!--  <section class="filters">
           <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="filter-group">
                 <legend class="filter-title visually-hidden">Фильтр</legend>
-                  <ul class="filter-list">
+                  <ul class="filter-list reset-list">
                     <li class="filter-item">
                       <fieldset class="sorting">
                         <label>Сортировка:</label>
@@ -262,7 +256,7 @@
   <!--список ассортимента-->
         <section class="catalog">
           <h2 class="visually-hidden">Ассортимент</h2>
-            <ul class="catalog-list">
+            <ul class="catalog-list reset-list">
               <li class="catalog-item">
                 <img class="catalog-image" src="img/products/orange-ice-cream.png" width="267" height="267"
                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -320,7 +314,7 @@
               <li class="catalog-item">
                 <img class="catalog-image" src="img/products/menthol-ice-cream.png" width="267" height="267"
                 alt="Сливочноe с ментоловым сиропом">
-                <p class="catalog-price">435₽/<span>кг</span></p>
+                <p class="catalog-price">435₽<span class="catalog-price-currency">/</span><span class="catalog-price-units">кг</span></p>
                 <a class="catalog-link" href="#">Сливочноe с ментоловым сиропом</a>
               </li>
               <li class="catalog-item">
@@ -339,7 +333,7 @@
         </section>
         <section class="catalog-pagination pagination">
           <h2 class="visually-hidden">Пагинация</h2>
-            <ol class="pagination-list">
+            <ol class="pagination-list reset-list">
               <li><a href="#">«</a></li>
               <li><a class="pagination-link-active">1</a></li>
               <li><a href="#">2</a></li>
@@ -352,10 +346,10 @@
     </main>
 <!--подвал-->
   <!--социальные сети-->
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="page-footer-social social">
         <h2 class="visually-hidden">Глейси в соцсетях</h2>
-          <ul class="social-list">
+          <ul class="social-list reset-list">
             <li class="social-item">
               <a href="https://twitter.com"><span class="visually-hidden">Мы в Твиттер</span>
                 <img src="img/icons/twitter.svg" width="32" height="32" alt="twitter"></a>
@@ -377,7 +371,7 @@
   <!--документация-->
       <section class="page-footer-company-documentation company-documentation">
         <h2 class="visually-hidden">документация компании Глейси</h2>
-          <ul class="company-documentation-list">
+          <ul class="company-documentation-list reset-list">
             <li class="company-documentation-item">
               <a href="#">Для поставщиков</a>
             </li>
