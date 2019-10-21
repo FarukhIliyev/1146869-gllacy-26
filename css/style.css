@@ -3,35 +3,31 @@
   font-weight: 400;
   font-style: normal;
 
-  src: local('Roboto'),
+  src: local('Roboto-Regular'),
        url('/fonts/web/roboto.woff2') format('woff2'),
        url('/fonts/web/roboto.woff') format('woff');
 }
-
 @font-face {
   font-family: 'Roboto';
   font-weight: 500;
   font-style: normal;
 
-  src: local('Roboto'),
+  src: local('Roboto-Medium'),
        url('/fonts/web/robotomedium.woff2') format('woff2'),
        url('/fonts/web/robotomedium.woff') format('woff');
 }
-
 @font-face {
   font-family: 'Roboto';
   font-weight: 700;
   font-style: normal;
 
-  src: local('Roboto'),
+  src: local('Roboto-Bold'),
        url('/fonts/web/robotobold.woff2') format('woff2'),
        url('/fonts/web/robotobold.woff') format('woff');
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
 .visually-hidden {
   position: absolute;
 
@@ -51,16 +47,13 @@
 
   list-style: none;
 }
-
 body {
   margin: 0;
 
   background-color: #849d8f;
 
   font-family: 'Roboto', 'Arial', sans-serif;
-  /*color: #ffffff;*/
 }
-
 img {
   max-width: 100%;
 }
@@ -73,43 +66,35 @@ a {
 .feedback p {
   margin-bottom: inherit;
 }
-
-
 html {
   box-sizing: border-box;
 }
 /*----------------------------ширина главных блоков---------------------------*/
 .container {
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
 }
 /*-----------------------------------шапка------------------------------------*/
   /*-----------------------------панель навигации-----------------------------*/
 .page-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 10px;
+
 }
 .page-navigation {
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
 }
 .page-header-logo {
-  display: flex;
   width: 154px;
 }
 .page-header a {
   color: #ffffff;
 }
 .page-header-contact {
-  display: block;
+  position: absolute;
 }
 .page-header-contact-text {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   width: 166px;
   color: #ffffff;
   font-size: 14px;
@@ -118,9 +103,8 @@ html {
   font-size: 22px;
 }
 
-  /*-----------------------------навигация по сайту-----------------------------*/
+  /*----------------------------навигация по сайту----------------------------*/
 .site-navigation {
-  display: flex;
   width: 400px;
   color: #ffffff;
 }
@@ -132,8 +116,7 @@ html {
 }
 .site-navigation-list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin-right: 28px;
 }
 .site-navigation-item {
   font-size: 16px;
@@ -143,17 +126,15 @@ html {
   font-size: 14px;
 }
 
-  /*-------------------------------юзер навигация-------------------------------*/
+  /*------------------------пользовательская навигация------------------------*/
 .user-navigation {
-  display: flex;
-  justify-content: flex-end;
   width: 245px;
   color: #ffffff;
+  margin-left: auto;
 }
-.user-navigation-list {
+.user-navigation-list:not(:last-child) {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-right: 0;
 }
 .user-navigation-dropdown {
   display: none;
@@ -194,8 +175,7 @@ html {
 /*--------------------------основной контейнер сайта--------------------------*/
   /*----------------------------выбор категории-------------------------------*/
 .page-content {
-  display: flex;
-  flex-wrap: wrap;
+
 }
 .page-content a {
   color: #ffffff;
@@ -203,20 +183,17 @@ html {
 .page-content-title {
   color: #ffffff;
   font-size: 35px;
-  font-weight: 500;
+}
+.ice-cream-list {
+  display: flex;
 }
 .ice-cream-item {
   font-size: 14px;
 }
 
   /*--------------------------специальное предложение-------------------------*/
-.index-columns {
-  display: flex;
-  color: #ffffff;
-}
 .special-offer {
   display: flex;
-  width: 1200px;
 }
 .special-offer-stock {
   display: block;
@@ -226,35 +203,30 @@ html {
   width: 320px;
   font-size: 35px;
   font-weight: 500;
+  color: #ffffff;
 }
 .special-offer-stock-text {
   width: 512px;
   font-size: 18px;
-}
-.index-columns a {
   color: #ffffff;
 }
 
   /*--------------------------------хит продаж--------------------------------*/
 .catalog {
-  display: flex;
-  align-content: center;
+
 }
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
 }
 .catalog-item {
-  display: block;
-  margin: 10px;
-}
-.catalog-image {
-  display: block;
   width: 270px;
-  margin-bottom: 15px;
+}
+.catalog-images-wrapper {
+  width: 267px;
+  height: 267px;
 }
 .catalog-link {
-  display: block;
   width: 252px;
 }
 .catalog-link a {
@@ -268,6 +240,7 @@ html {
   color: #ffffff;
   font-size: 45px;
   font-weight: 500;
+  margin: 0 auto;
 }
 .catalog-price span {
   display: block;
@@ -276,23 +249,19 @@ html {
 
   /*---------------------------------пагинация--------------------------------*/
 .catalog-pagination {
-  display: block;
-  width: 1200px;
+
 }
 .pagination-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
   /*---------------------------описание преимущества--------------------------*/
 .advantages {
-  display: flex;
-  flex-wrap: wrap;
   color: #323232;
 }
 .advantages-title {
-  display: block;
   width: 1008px;
   font-size: 24px;
   font-weight: 400;
@@ -303,8 +272,6 @@ html {
   justify-content: flex-end;
 }
 .advantages-item {
-  display: block;
-  justify-content: flex-start;
   width: 476px;
   margin-bottom: 10px;
   margin-right: 93px;
@@ -317,26 +284,20 @@ html {
   flex-wrap: wrap;
 }
 .recipes-advice-blog {
-  display: block;
-  flex-wrap: wrap;
   width: 560px;
   color: #323232;
 }
 .recipes-advice-blog a {
   display: block;
   text-decoration: underline;
-  color: #323232;
-}
-.recipes-advice-blog-title {
-  display: block;
-  width: 164px;
-  font-size: 16px;
-}
-.recipes-advice-blog-link {
-  display: block;
   width: 285px;
   font-size: 24px;
   font-weight: 500;
+  color: #323232;
+}
+.recipes-advice-blog-title {
+  width: 164px;
+  font-size: 16px;
 }
 
   /*---------------------------------рассылка---------------------------------*/
@@ -346,9 +307,7 @@ html {
   width: 560px;
 }
 .recipes-subscription-text {
-  display: block;
   width: 505px;
-
   color: #5a5a5a;
   font-size: 16px;
 }
@@ -365,21 +324,18 @@ html {
 .map {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  width: 100%;
+  height: 433px;
+  /*background-image: url("img/products/map.png");*/
 }
 .map-contact {
-  display: flex;
   width: 303px;
   color: #323232;
 }
 .map-contact-details {
-  display: block;
-  flex-wrap: wrap;
   width: 220px;
 }
 a.button-about-us {
-  display: block;
-  justify-content: center;
   color: #ffffff;
   font-size: 18px;
 }
@@ -392,8 +348,6 @@ a.map-contact-details-link {
   font-style: normal;
 }
 .map-contact-details-text {
-  display: block;
-  flex-wrap: wrap;
   width: 172px;
   font-size: 14px;
 }
@@ -403,17 +357,21 @@ a.map-contact-details-link {
 }
 
 /*-----------------------------------подвал-----------------------------------*/
-  /*-----------------------------социальные сети------------------------------*/
 .page-footer {
   display: flex;
   justify-content: flex-start;
   justify-content: space-between;
   margin-top: 120px;
+  height: 104px;
+  margin: 0 auto;
 }
+  /*-----------------------------социальные сети------------------------------*/
 .social {
-  display: block;
+
+}
+.page-footer-social {
   width: 185px;
-  height: 42px;
+  min-height: 42px;
 }
 .social-list {
   display: flex;
@@ -426,10 +384,13 @@ a.map-contact-details-link {
 }
 
   /*------------------------------документация--------------------------------*/
+.company-documentation {
+
+}
 .company-documentation a {
   color: #ffffff;
 }
-.company-documentation {
+.page-footer-company-documentation {
   display: block;
   width: 300px;
   height: 35px;
@@ -447,6 +408,9 @@ a.map-contact-details-link {
 
   /*-------------------------------копирайтер---------------------------------*/
 .copyright {
+
+}
+.page-footer-copyright {
   display: flex;
   flex-wrap: wrap;
   width: 192px;
@@ -456,7 +420,6 @@ a.map-contact-details-link {
 }
 .copyright-text {
   display: flex;
-  justify-content: space-between;
   font-size: 12px;
   color: #ffffff;
 }
@@ -467,7 +430,7 @@ a.map-contact-details-link {
   display: block;
 }
 
-/*---------------------------------модалка------------------------------------*/
+/*----------------------------------модалка-----------------------------------*/
 .feedback {
   /*display: none;*/
   display: flex;
