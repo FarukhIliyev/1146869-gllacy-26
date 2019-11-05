@@ -182,9 +182,9 @@ html {
   border-radius: 50px;
   background-color: #f7f6f3;
 }
-.user-navigation-link:hover + .dropdown,
-.site-navigation-link:hover + .dropdown {
-  display: none;
+.user-navigation-link:hover .dropdown,
+.site-navigation-link:hover .dropdown {
+  /*display: block;*/
 }
 
   /*------------------------пользовательская навигация------------------------*/
@@ -345,20 +345,22 @@ html {
   background-repeat: no-repeat;
   background-position: top center;
 }
-.slider {
-  height: 550px;
-  text-align: center;
-  color: #ffffff;
-}
 .slider-list {
-  /*display: none;*/
-  position: absolute;
   top: 320px;
   left: 250px;
   height: 35px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.slide {
+  display: none;
+}
+.slider {
+  position: relative;
+  height: 550px;
+  text-align: center;
+  color: #ffffff;
 }
 .slide-title {
   width: 700px;
@@ -384,39 +386,39 @@ html {
   border-radius: 50px;
   cursor: pointer;
 }
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-
-  clip: rect(0, 0, 0, 0);
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
-.slider-controls label {
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slider-controls {
+  position: absolute;
+  bottom: 45px;
+  left: 28px;
+}
+label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
+  width: 21px;
+  height: 21px;
+  margin-right: 3px;
+
   vertical-align: top;
+
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.slide1 {
-
-}
-.slide2 {
-  display: none;
-}
-.slide3 {
-  display: none;
-}
-
   /*----------------------------выбор категории-------------------------------*/
 .page-content {
   position: relative;
+
+
 }
 .page-content a {
   color: #ffffff;
@@ -518,9 +520,8 @@ html {
   margin: 0;
 }
 .catalog-item:hover {
-  background-color: lightgray;
+  background: rgba(205, 214, 219, 0.3);
   border-radius: 5px;
-  opacity: 0.8;
 }
 .catalog-hit {
   position: absolute;
@@ -558,6 +559,12 @@ html {
 }
 .catalog-price span {
   font-size: 30px;
+}
+.button-catalog-item {
+  width: 200px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 13px;
 }
 
 
@@ -845,21 +852,54 @@ a.map-contact-details-link {
 
 /*----------------------------------модалка-----------------------------------*/
 .feedback {
-  display: none;
+  /*display: none;*/
+  position: absolute;
+  top: 340px;
+  left: 480px;
   flex-wrap: wrap;
   width: 480px;
+  height: 442px;
+
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  margin: 0;
+  padding-left: 24px;
+  padding-top: 21px;
+
+  z-index: 100;
+}
+.feedback-input {
+  width: 265px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  margin-bottom: 20px;
+  padding-left: 14px;
+}
+.feedback-textarea {
+  width: 426px;
+  height: 153px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  padding-left: 14px;
+  padding-top: 13px;
 }
 .feedback-text {
-  display: block;
+
   font-size: 24px;
   font-weight: 500px;
+  margin: 0;
 }
 .feedback input::placeholder,
 .feedback textarea::placeholder {
-  display: block;
+
   font-size: 16px;
 }
 .button-feedback {
   color: #ffffff;
   font-size: 18px;
+  width: 139px;
+  height: 46px;
+  margin-left: 250px;
 }
+.button-close

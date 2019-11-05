@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Магазин мороженного "Gllacy"</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
   </head>
   <body>
     <div class="site-wrapper">
@@ -75,7 +75,7 @@
                 <li class="user-navigation-item item-login">
                   <a class="user-navigation-link" href="#" aria-label="Открыть окно входа">
                     <svg class="item-login-entrance" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewbox="0 0 21 19">
-                      <g fill="#000">
+                      <g fill="#fff">
                         <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
                         <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
                       </g>
@@ -87,7 +87,7 @@
                       <form class="user-navigation-login-form" action="https://echo.htmlacademy.ru" method="post">
                         <input class="user-navigation-login-input" type="email" name="email" id="entrance-field" placeholder="email@example.com">
                         <input class="user-navigation-login-input" type="password" name="password" id="password-field" placeholder="password">
-                        <button class="button-come" type="submit" name="login">Войти</button>
+                        <button class="button button-come" type="submit" name="login">Войти</button>
                         <section сlass="user-navigation-login-form-link">
                           <a class="dropdown-login-link" href="#">Забыли пароль?</a>
                           <a class="dropdown-registration-link" href="#">Новая регистрация</a>
@@ -111,7 +111,6 @@
             </ul>
           </section>
         </nav>
-  <!--слайдер-->
       <h1 class="visually-hidden">Магазин мороженного "Глейси"</h1>
         <div class="page-header-contact">
           <p class="page-header-contact-text">С 10 до 20, ежедневно
@@ -120,27 +119,28 @@
         </div>
       </header>
 <!--основной контейнер сайта-->
+  <!--слайдер-->
       <main class="page-content">
         <section class="slider">
-          <div сlass="slider-control">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
+          <div class="slider-controls">
+            <label for="product-1" aria-label="Первый"></label>
+            <label for="product-2" aria-label="Второй"></label>
+            <label for="product-3" aria-label="Третий"></label>
           </div>
           <ul class="slider-list">
-            <li class="slider-item slide1" id="slide1">
+            <li class="slider-item slide" id="slide1">
               <h3 class="slide-title">
                 Крем-брюле и пломбир с малиновым джемом
               </h3>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider-item slide2" id="slide2">
+            <li class="slider-item slide" id="slide2">
               <h3 class="slide-title">
                 Шоколадный пломбир и лимонный сорбер
               </h3>
               <a class="button slide-button" href="#">Давайте оба!</a>
             </li>
-            <li class="slider-item slide3" id="slide3">
+            <li class="slider-item slide" id="slide3">
               <h3 class="slide-title">
                 Пломбир с помадкой и клубничный щербет
               </h3>
@@ -157,7 +157,7 @@
                   При покупке 2 кг любого фруктового мороженого,
                   добавим в ваш заказ банку малинового варенья бесплатно.
                 </p>
-                <a class="special-offer-stock-raspberry-link" href="#">Хочу варенье!</a>
+                <a class="button special-offer-stock-raspberry-link" href="#">Хочу варенье!</a>
             </section>
             <section class="special-offer-stock-chocolate">
               <h3 class="special-offer-stock-title">Шоколадки даром!</h3>
@@ -165,7 +165,7 @@
                   При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
                   шоколадной присыпки совершенно бесплатно.
                 </p>
-                <a class="special-offer-stock-chocolate-link" href="#">Хочу шоколадки!</a>
+                <a class="button special-offer-stock-chocolate-link" href="#">Хочу шоколадки!</a>
             </section>
         </section>
   <!--хит продаж-->
@@ -176,6 +176,7 @@
                 <div class="catalog-images-wrapper">
                   <img class="catalog-image" src="img/products/orange-ice-cream.png" width="267" height="267"
                   alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <button class="button button-catalog-item">Быстрый просмотр</button>
                 </div>
                 <svg class="catalog-hit" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewbox="0 0 61 61">
                   <circle fill="#FFF" cx="30.5" cy="30.5" r="30.5"/>
@@ -192,6 +193,7 @@
                 <div class="catalog-images-wrapper">
                   <img class="catalog-image" src="img/products/coffee-ice-cream.png" width="267" height="267"
                   alt="Сливочно-кофейное с кусочками шоколада">
+                  <button class="button button-catalog-item">Быстрый просмотр</button>
                 </div>
                 <svg class="catalog-hit" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewbox="0 0 61 61">
                   <circle fill="#FFF" cx="30.5" cy="30.5" r="30.5"/>
@@ -208,6 +210,7 @@
                 <div class="catalog-images-wrapper">
                   <img class="catalog-image" src="img/products/strawberry-ice-cream.png" width="267" height="267"
                   alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <button class="button button-catalog-item">Быстрый просмотр</button>
                 </div>
                 <svg class="catalog-hit" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewbox="0 0 61 61">
                   <circle fill="#FFF" cx="30.5" cy="30.5" r="30.5"/>
@@ -224,6 +227,7 @@
                 <div class="catalog-images-wrapper">
                   <img class="catalog-image" src="img/products/creme-brulee-ice-cream.png" width="267" height="267"
                   alt="Сливочное крем-брюле с карамельной подливкой">
+                  <button class="button button-catalog-item">Быстрый просмотр</button>
                 </div>
                 <svg class="catalog-hit" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewbox="0 0 61 61">
                   <circle fill="#FFF" cx="30.5" cy="30.5" r="30.5"/>
@@ -406,13 +410,12 @@
       <h2 class="visually-hidden">Написать нам</h2>
         <p class="feedback-text">Мы обязательно Вам ответим</p>
         <button class="button-close" type="button" aria-label="Закрыть модальное окно">Х</button>     <!--кнопка закрывает форму-->
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="name" class="visually-hidden">Имя</label>
-          <input name="name" id="name" placeholder="Имя Фамилия">
+          <input class="feedback-input" name="name" id="name" placeholder="Имя Фамилия">
           <label for="email" class="visually-hidden">email</label>
-          <input type="email" name="email" id="email" placeholder="email@example.com?">
-          <textarea name="massage" id="massage" placeholder="В свободной форме"
-          cols="50" rows="10"></textarea>
+          <input class="feedback-input" type="email" name="email" id="email" placeholder="email@example.com?">
+          <textarea class="feedback-textarea" name="massage" id="massage" placeholder="В свободной форме" cols="50" rows="10" aria-label="Напишите нам"></textarea>
           <button class="button button-feedback" type="submit" name="feedback">Отправить</button>     <!--кнопка отправляет данные-->
         </form>
     </section>
