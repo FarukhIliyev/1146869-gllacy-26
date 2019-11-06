@@ -100,9 +100,6 @@ html {
   margin-left: 27px;
   margin-right: 24px;
 }
-.page-header a {
-  color: #ffffff;
-}
 .page-header-contact {
   position: absolute;
   top: 60px;
@@ -119,6 +116,7 @@ html {
 }
 .page-header-contact-link {
   font-size: 22px;
+  color: #ffffff;
 }
 
   /*----------------------------навигация по сайту----------------------------*/
@@ -136,6 +134,9 @@ html {
 }
 .site-navigation-list {
   display: flex;
+}
+.site-navigation-item a {
+  color: #ffffff;
 }
 .site-navigation-item:not(:first-child) {
   margin-right: 27px;
@@ -184,13 +185,13 @@ html {
 }
 .user-navigation-link:hover .dropdown,
 .site-navigation-link:hover .dropdown {
-  /*display: block;*/
+  display: block;
 }
 
   /*------------------------пользовательская навигация------------------------*/
 .user-navigation {
   height: 32px;
-  color: #ffffff;
+  /*color: #ffffff;*/
   margin-left: auto;
   padding-right: 27px;
 
@@ -204,6 +205,9 @@ html {
 }
 .user-navigation-item {
   margin-left: 10px;
+}
+.user-navigation-item  a{
+  color: #ffffff;
 }
 .item-search {
   display: block;
@@ -249,6 +253,7 @@ html {
 }
 .dropdown-search {
   position: absolute;
+
   top: 36px;
   right: 213px;
   width: 341px;
@@ -259,10 +264,16 @@ html {
 }
 .dropdown-login {
   position: absolute;
+
+  /*display: none;*/
   top: 36px;
   right: 110px;
   width: 277px;
   height: 214px;
+  padding-left: 19px;
+  padding-right: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f8f7f4;
   border-radius: 5px;
   padding-top: 20px;
@@ -279,29 +290,30 @@ html {
   border-radius: 5px;
 }
 .user-navigation-login-input {
-  padding-left: 15px;
-  width: 239px;
-  height: 42px;
+  width: 100%;
+  min-height: 42px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   margin-bottom: 20px;
+  padding-left: 15px;
 }
 .user-navigation-search-input {
-  width: 309px;
-  height: 42px;
-  padding-left: 14px;
+  width: 100%;
+  min-height: 42px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  color: #999999;*/
+  color: #999999;
+  padding-left: 15px;
 }
 .user-navigation input::placeholder {
   font-size: 14px;
 }
-.button-come {
-  width: 100px;
-  height: 44px;
+.user-navigation-login-form .button-come {
+  display: flex;
+  font-size: 17px;
   margin: 0;
-  margin-left: 12px;
+  margin-left: 19px;
+  padding: 12px 25px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
@@ -310,11 +322,14 @@ html {
 
   color: #ffffff;
 }
-.user-navigation a {
-  color: #ffffff;
+.user-navigation-login-link a{
+  display: flex;
+  justify-content: flex-end;
+
+  color: #323232;
 }
 
-/**/
+
 .dropdown-login-link {
   font-size: 13px;
 }
@@ -375,7 +390,7 @@ html {
   padding: 12px 44px;
   font-weight: 600px;
   font-size: 31px;
-  line-height: 41px;
+  /*line-height: 41px;*/
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -390,7 +405,6 @@ html {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
-
 .button:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -417,8 +431,6 @@ label {
   /*----------------------------выбор категории-------------------------------*/
 .page-content {
   position: relative;
-
-
 }
 .page-content a {
   color: #ffffff;
@@ -439,28 +451,25 @@ label {
   display: flex;
 }
 .special-offer-stock-raspberry {
-  width: 561px;
+  width: 560px;
   height: 230px;
   margin-left: 27px;
-  margin-right: 13px;
-  margin-top: 20px;
   background-image: url("../img/products/raspberry-background.png");
   background-repeat: no-repeat;
 }
 .special-offer-stock-chocolate {
   width: 560px;
   height: 230px;
-  margin-left: 13px;
-  margin-right: 27px;
-  margin-top: 20px;
+  margin-left: 26px;
   background-image: url("../img/products/chocolate-background.png");
   background-repeat: no-repeat;
 }
 .special-offer-stock-raspberry-link {
   position: relative;
-  right: -373px;
-  bottom: -62px;
-  padding: 13px 30px;
+  right: -374px;
+  bottom: -44px;
+  padding: 13px 24px;
+  font-size: 18px;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -472,10 +481,10 @@ label {
 }
 .special-offer-stock-chocolate-link {
   position: relative;
-  right: -348px;
-  bottom: -62px;
-  width: 1px;
-  padding: 12px 30px;
+  right: -350px;
+  bottom: -44px;
+  padding: 12px 22px;
+  font-size: 18px;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
@@ -509,15 +518,19 @@ label {
   display: flex;
   flex-wrap: wrap;
   margin-left: 15px;
+  height: 340px;
 }
 .catalog-item {
   position: relative;
   width: 293px;
+  height: 406px;
   padding-top: 6px;
   padding-left: 13px;
   padding-right: 13px;
   padding-bottom: 40px;
   margin: 0;
+
+  z-index: 100;
 }
 .catalog-item:hover {
   background: rgba(205, 214, 219, 0.3);
@@ -529,7 +542,7 @@ label {
 }
 .catalog-price {
   position: absolute;
-  bottom: 104px;
+  bottom: 150px;
   font-size: 45px;
   font-weight: 500;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -561,10 +574,15 @@ label {
   font-size: 30px;
 }
 .button-catalog-item {
-  width: 200px;
-  height: 45px;
+  position: absolute;
+  bottom: 22px;
+
   color: #ffffff;
   font-size: 13px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-left: 56px;
+
 }
 
 
@@ -581,9 +599,10 @@ label {
   /*---------------------------описание преимущества--------------------------*/
 .advantages {
   position: relative;
-  height: 306px;
+  /*height: 306px;*/
   margin-left: 27px;
   margin-right: 27px;
+  margin-top: 39px;
   margin-bottom: 20px;
   color: #323232;
   background-image: url("../img/products/waffle-background.png");
@@ -701,7 +720,7 @@ label {
   color: #999999;
 }
 .button-details {
-  padding: 1px 19px;
+  padding: 12px 19px;
   color: #ffffff;
   font-size: 18px;
   border: none;
@@ -763,13 +782,14 @@ label {
   font-size: 18px;
   font-weight: 500;
 }
-a.button-about-us {
+.button-about-us {
   display: block;
   width: 252px;
   height: 45px;
   color: #ffffff;
   font-size: 18px;
   padding: 2px;
+  padding-top: 10px;
 }
 a.map-contact-details-link {
   color: #323232;
@@ -798,8 +818,10 @@ a.map-contact-details-link {
   height: 32px;
   padding-top: 9px;
 }
+.social-item:hover {
+  transform: rotate(15deg);
+}
 .button-outline-color {
-
 }
 
   /*------------------------------документация--------------------------------*/
