@@ -35,7 +35,7 @@ html {
   outline: 1px solid #e5e5e5;
 }*/
 
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
 
   overflow: hidden;
@@ -47,7 +47,7 @@ html {
   padding: 0;
 
   border: 0;
-}
+}*/
 .reset-list {
   margin: 0;
   padding: 0;
