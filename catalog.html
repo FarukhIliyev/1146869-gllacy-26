@@ -68,11 +68,76 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Фильтр по категории</legend>
-                <p>Сортировка:
-                  <select>
-                    <option>По популярности</option>
-                  </select>
-                </p>
+                <ul>
+                  <li>
+                    <fieldset>
+                      <legend>Сортировка:</legend>
+                        <select>
+                          <option>по популярности</option>
+                        </select>
+                    </fieldset>
+                  </li>
+                  <li>
+                    <fieldset>
+                      <legend>Цена:</legend>
+                        <label><input type="text" name="min-price" value="100 руб."></label>
+                        <label><input type="text" name="max-price" value="500 руб."></label>
+                    </fieldset>
+                  </li>
+                  <li>
+                    <fieldset>
+                      <legend>Жирность:</legend>
+                        <ul>
+                          <li>
+                            <input type="radio" name="fat" id="zero-percent" value="0%">
+                            <label for="zero-percent">0%</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="fat" id="up-to-ten-percent" value="up-to-10%" checked>
+                            <label for="up-to-ten-percent">до 10%</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="fat" id="up-to-thirty-percent" value="up-to-30%">
+                            <label for="up-to-thirty-percent">до 30%</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="fat" id="over-thirty-percent" value="over-30%">
+                            <label for="over-thirty-percent">свыше 30%</label>
+                          </li>
+                        </ul>
+                    </fieldset>
+                  </li>
+                  <li>
+                    <fieldset>
+                      <legend>Наполнители:</legend>
+                        <ul>
+                          <li>
+                            <input type="checkbox" name="chocolads" id="chocolads-field" checked>
+                            <label for="chocolads-field">шоколадные</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
+                            <label for="sugar-powders-field">сахарные присыпки</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="fruits" id="fruits-field">
+                            <label for="fruits-field">фрукты</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="syrups" id="syrups-field">
+                            <label for="syrups-field">сиропы</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" name="jams" id="jams-field">
+                            <label for="jams-field">джемы</label>
+                          </li>
+                        </ul>
+                    </fieldset>
+                  </li>
+                </ul>
+                <button type="button" name="button">
+                  Применить
+                </button>
             </fieldset>
           </form>
       </section>
@@ -81,90 +146,109 @@
           <ul>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img\products\orange-ice-cream.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </div>
               <p>310<span>кг</span></p>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img\products\coffee-ice-cream.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </div>
               <p>380<span>кг</span></p>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img\products\strawberry-ice-cream.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </div>
               <p>355<span>кг</span></p>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img\products\creme-brulee-ice-cream.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </div>
               <p>415<span>кг</span></p>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное с брусничным джемом">
+                <img src="img\products\lingonberry-ice-cream.png" width="267" height="267" alt="Сливочное с брусничным джемом">
               </div>
               <p>325<span>кг</span></p>
               <a href="#">Сливочное с брусничным джемом</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочно-черничное с цельными ягодами черники">
+                <img src="img\products\blueberry-ice-cream.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
               </div>
               <p>410<span>кг</span></p>
               <a href="#">Сливочно-черничное с цельными ягодами черники</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочно-лимонное с карамельной присыпкой">
+                <img src="img\products\lemon-ice-cream.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
               </div>
               <p>375<span>кг</span></p>
               <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное с шоколадной стружкой">
+                <img src="img\products\milk-chocolate-ice-cream.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               </div>
               <p>320<span>кг</span></p>
               <a href="#">Сливочное с шоколадной стружкой</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочно-ванильное с кусочками шоколада">
+                <img src="img\products\vanilla-ice-cream.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
               </div>
               <p>440<span>кг</span></p>
               <a href="#">Сливочно-ванильное с кусочками шоколада</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное с ментоловым сиропом">
+                <img src="img\products\menthol-ice-cream.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
               </div>
               <p>435<span>кг</span></p>
               <a href="#">Сливочное с ментоловым сиропом</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное с кусочками черного шоколада">
+                <img src="img\products\black-chocolate-ice-cream.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
               </div>
               <p>355<span>кг</span></p>
               <a href="#">Сливочное с кусочками черного шоколада</a>
             </li>
             <li>
               <div>
-                <img src="https://via.placeholder.com/150x100" alt="Сливочное с мятным сиропом">
+                <img src="img\products\peppermint-ice-cream.png" width="267" height="267" alt="Сливочное с мятным сиропом">
               </div>
               <p>420<span>кг</span></p>
               <a href="#">Сливочное с мятным сиропом</a>
             </li>
           </ul>
       </section>
+        <div>
+          <ol>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+          </ol>
+        </div>
     </main>
     <footer>
       <section>
