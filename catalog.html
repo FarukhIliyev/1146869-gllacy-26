@@ -64,10 +64,10 @@
         </li>
       </ul>
       <section>
-        <h2>Форма выбора по категории</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="visually-hidden">Форма выбора по категории</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-              <legend>Фильтр по категории</legend>
+              <legend class="visually-hidden">Фильтр по категории</legend>
                 <ul>
                   <li>
                     <fieldset>
@@ -80,8 +80,8 @@
                   <li>
                     <fieldset>
                       <legend>Цена:</legend>
-                        <label><input type="text" name="min-price" value="100 руб."></label>
-                        <label><input type="text" name="max-price" value="500 руб."></label>
+                        <input type="text" name="min-price" value="100 руб.">
+                        <input type="text" name="max-price" value="500 руб.">
                     </fieldset>
                   </li>
                   <li>
@@ -135,14 +135,12 @@
                     </fieldset>
                   </li>
                 </ul>
-                <button type="button" name="button">
-                  Применить
-                </button>
+                <button type="submit" name="filter">Применить</button>
             </fieldset>
           </form>
       </section>
       <section>
-        <h2>Ассортимент Мороженного</h2>
+        <h2 class="visually-hidden">Ассортимент Мороженного</h2>
           <ul>
             <li>
               <div>
