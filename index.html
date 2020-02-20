@@ -7,157 +7,157 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-    <div>
-      <div>
-        <header class="page-header">
-          <nav class="page-nav">
-            <a href="index.html">
-              <img src="img\icons\Logo.png" alt="Логотип Глэйси" width="154" height="64">
-            </a>
-            <section>
-              <h2 class="visually-hidden">Навигация по сайту</h2>
-                <ul>
-                  <li>
-                    <a href="catalog.html">Каталог</a>
-                      <section>
-                        <h2 class="visually-hidden">Меню каталога</h2>
-                        <ul>
-                          <li>
+    <div class="toggle-wrapper">
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    </div>
+    <div class="container">
+      <header class="page-header">
+        <nav class="page-nav">
+          <a class="page-header-logo" href="index.html">
+            <img src="img/icons/Logo.png" alt="Логотип Глэйси" width="154" height="64">
+          </a>
+          <section class="site-navigation">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+              <ul class="site-navigation-list reset-list">
+                <li class="site-navigation-item">
+                  <a class="site-navigation-link site-navigation-link-btn" href="catalog.html">Каталог</a>
+                    <section class="site-navigation-dropdown dropdown">
+                      <h2 class="visually-hidden">Меню каталога</h2>
+                        <ul class="dropdown-list">
+                          <li class="dropdown-item">
                             <a href="#">Новинки</a>
                           </li>
-                          <li>
+                          <li class="dropdown-item">
                             <a href="#">Сливочное</a>
                           </li>
-                          <li>
+                          <li class="dropdown-item">
                             <a href="#">Щербеты</a>
                           </li>
-                          <li>
+                          <li class="dropdown-item">
                             <a href="#">Фруктовые</a>
                           </li>
-                          <li>
+                          <li class="dropdown-item">
                             <a href="#">Мелорин</a>
                           </li>
                         </ul>
-                      </section>
-                  </li>
-                  <li>
-                    <a href="#">Доставка и оплата</a>
-                  </li>
-                  <li>
-                    <a href="#">О Компании</a>
-                  </li>
-                </ul>
-            </section>
-            <section>
-              <h2 class="visually-hidden">Юзер навигация</h2>
-                <ul>
-                  <li>
-                    <a href="#" aria-label="открыть окно поиска">Поиск</a>
-                      <section>
-                        <form action="https://echo.htmlacademy.ru/courses" method="post">
-                          <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                    </section>
+                </li>
+                <li class="site-navigation-item">
+                  <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="site-navigation-item">
+                  <a href="#">О Компании</a>
+                </li>
+              </ul>
+          </section>
+          <section class="user-navigation">
+            <h2 class="visually-hidden">Пользовательская навигация</h2>
+              <ul class="user-navigation-list reset-list">
+                <li class="user-navigation-item item-search">
+                  <a class="user-navigation-link" href="#" aria-label="открыть окно поиска">Поиск</a>
+                    <section class="user-navigation-dropdown dropdown-search">
+                      <h2 class="visually-hidden">Поиск по сайту</h2>
+                        <form class="dropdown-search-form" action="https://echo.htmlacademy.ru/courses" method="post">
+                          <input class="dropdown-search-input" type="text" name="search" id="search-field" placeholder="Что ищем?">
                           <label for="search-field" class="visually-hidden">Поиск</label>
                         </form>
-                      </section>
-                  </li>
-                  <li>
-                    <a href="#" aria-label="открыть окно входа">Войти</a>
-                      <section>
-                        <form action="https://echo.htmlacademy.ru/courses" method="get">
-                          <input type="text" name="email" id="email-field" placeholder="Электронная почта">
+                    </section>
+                </li>
+                <li class="user-navigation-item item-account">
+                  <a class="user-navigation-link" href="#" aria-label="открыть окно входа">Войти</a>
+                    <section class="user-navigation-dropdown dropdown-account">
+                      <h2 class="visually-hidden">Войти в аккаунт</h2>
+                        <form class="dropdown-account-form" action="https://echo.htmlacademy.ru/courses" method="get">
+                          <input class="dropdown-account-input" type="text" name="email" id="email-field" placeholder="Электронная почта">
                           <label for="email-field" class="visually-hidden">Электронная почта</label>
-                          <input type="text" name="password" id="password-field" placeholder="Пароль">
+                          <input class="dropdown-account-input" type="text" name="password" id="password-field" placeholder="Пароль">
                           <label for="password-field" class="visually-hidden">Пароль</label>
-                          <button type="submit" name="login">Войти</button>
+                          <button class="dropdown-account-btn" type="submit" name="login">Войти</button>
                           <a href="#">Забыли пароль?</a>
                           <a href="#">Новая регистрация</a>
                         </form>
-                      </section>
-                  </li>
-                  <li>
-                    <a href="#">Корзина</a>
-                  </li>
-                </ul>
-            </section>
-          </nav>
-          <div>
-            <p>
-              С 10 до 20, ежедневно
-              <a href="#">
-                8 812 450-25-25
-              </a>
-            </p>
-          </div>
-        </header>
-        <section>
-          <div>
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
-          </div>
-          <ul>
-            <li>
-              <h3>Крем-брюле и пломбир с малиновым джемом
-              </h3>
-              <a href="#">Давайте оба!</a>
-            </li>
-            <li>
-              <h3>Шоколадный пломбир и лимонный сорбет
-              </h3>
-              <a href="#">Давайте оба!</a>
-            </li>
-            <li>
-              <h3>Пломбир с помадкой и клубничный щербет
-              </h3>
-              <a href="#">Давайте оба!</a>
-            </li>
-          </ul>
-        </section>
-      </div>
+                    </section>
+                </li>
+                <li class="user-navigation-item item-basket">
+                  <a class="user-navigation-link" href="#">Пусто</a>
+                    <section class="user-navigation-dropdown dropdown-basket">
+                      <h2 class="visually-hidden">Корзина</h2>
+                    </section>
+                </li>
+              </ul>
+          </section>
+        </nav>
+        <div class="page-contact">
+          <p class="page-contact-text">С 10 до 20, ежедневно
+            <a class="page-contact-link" href="tel:+88124502525">8 812 450-25-25</a>
+          </p>
+        </div>
+      </header>
+      <section class="slider">
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list reset-list">
+          <li class="slider-item">
+            <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a class="slide-button btn" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item">
+            <h3 class="slider-title">Шоколадный пломбир и лимонный сорбет</h3>
+            <a class="slide-button btn" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item">
+            <h3 class="slider-title">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="slide-button btn" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
       <main>
         <h1 class="visually-hidden">Магазин мороженного "Глэйси"</h1>
           <section>
-            <ul>
-              <li>
-                <div>
-                  <img src="img\products\orange-ice-cream.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" >
-                </div>
-                <p>310<span>кг</span></p>
-                <p>
-                  <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                </p>
-              </li>
-              <li>
-                <div>
-                  <img src="img\products\coffee-ice-cream.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" >
-                </div>
-                <p>380<span>кг</span></p>
-                <p>
-                  <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-                </p>
-              </li>
-              <li>
-                <div>
-                  <img src="img\products\strawberry-ice-cream.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада" >
-                </div>
-                <p>355<span>кг</span></p>
-                <p>
-                  <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                </p>
-              </li>
-              <li>
-                <div>
-                  <img src="img\products\creme-brulee-ice-cream.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой" >
-                </div>
-                <p>415<span>кг</span></p>
-                <p>
-                  <a href="#">Сливочное крем-брюле с карамельно подливкой</a>
-                </p>
-              </li>
-            </ul>
+            <h2 class="visually-hidden">Слайдер</h2>
+              <ul>
+                <li>
+                  <div>
+                    <img src="img/products/orange-ice-cream.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" >
+                  </div>
+                  <p>310<span>кг</span></p>
+                  <p>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                  </p>
+                </li>
+                <li>
+                  <div>
+                    <img src="img/products/coffee-ice-cream.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада" >
+                  </div>
+                  <p>380<span>кг</span></p>
+                  <p>
+                    <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                  </p>
+                </li>
+                <li>
+                  <div>
+                    <img src="img/products/strawberry-ice-cream.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада" >
+                  </div>
+                  <p>355<span>кг</span></p>
+                  <p>
+                    <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                  </p>
+                </li>
+                <li>
+                  <div>
+                    <img src="img/products/creme-brulee-ice-cream.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой" >
+                  </div>
+                  <p>415<span>кг</span></p>
+                  <p>
+                    <a href="#">Сливочное крем-брюле с карамельно подливкой</a>
+                  </p>
+                </li>
+              </ul>
           </section>
           <section>
             <h2 class="visually-hidden">Акционные предложения</h2>
@@ -225,7 +225,7 @@
             </section>
             <section>
               <h2 class="visually-hidden">Схема проезда</h2>
-                <img src="img\products\map.jpg" alt="карта">
+                <img src="img/products/map.jpg" alt="карта">
                   <section>
                     <h3 class="visually-hidden">Контакты</h3>
                       <div>
@@ -251,19 +251,19 @@
             <ul>
               <li>
                 <a href="https://twitter.com/"><span>Глэйси в Твиттер</span></a>
-                <img src="img\icons\twitter.png" alt="twitter">
+                <img src="img/icons/twitter.png" alt="twitter">
               </li>
               <li>
                 <a href="https://instagram.com/"><span>Глэйси в Инстаграм</span></a>
-                <img src="img\icons\inst.png" alt="instagram">
+                <img src="img/icons/inst.png" alt="instagram">
               </li>
               <li>
                 <a href="https://facebook.com/"><span>Глэйси в Фейсбук</span></a>
-                <img src="img\icons\fb.png" alt="facebook">
+                <img src="img/icons/fb.png" alt="facebook">
               </li>
               <li>
                 <a href="https://vk.com/"><span>Глэйси в Вконтакте</span></a>
-                <img src="img\icons\vk.png" alt="vkontakte">
+                <img src="img/icons/vk.png" alt="vkontakte">
               </li>
             </ul>
         </section>
@@ -286,7 +286,7 @@
         </section>
         <div>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img\icons\logo-htmlacademy-small.png" width="108" height="39" alt="HTMLAcademy">
+            <img src="img/icons/logo-htmlacademy-small.png" width="108" height="39" alt="HTMLAcademy">
           </a>
           <p>
           Сделано в
