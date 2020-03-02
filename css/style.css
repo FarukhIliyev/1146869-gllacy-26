@@ -131,7 +131,6 @@ html {
 /*слайдер*/
 .site-wrapper {
   min-width: 940px;
-  /*height: 620px;*/
   background-color: #849d8f;
   background-image: url("../img/products/slide-one-raspberry-jam.png");
   background-repeat: no-repeat;
@@ -151,9 +150,9 @@ html {
 
   list-style: none;
 }
-.slide {
+/*.slide {
   display: none;
-}
+}*/
 .slide-title {
   width: 700px;
   margin: 0 auto;
@@ -202,9 +201,9 @@ html {
 }
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
 
   vertical-align: top;
 
