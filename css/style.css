@@ -31,9 +31,9 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-/**>*{
+*>*{
   outline: 1px solid #e5e5e5;
-}*/
+}
 
 .visually-hidden {
   position: absolute;
@@ -67,7 +67,7 @@ img {
   max-width: 100%;
 }
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .feedback {
   color: black;
@@ -77,4 +77,157 @@ a {
 }
 html {
   box-sizing: border-box;
+}
+
+/*основной контейнер сайта*/
+.container {
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+/*шапка*/
+.page-header {
+  position: relative;
+  padding-top: 9px;
+
+  height: 100px;
+
+  color: #ffffff;
+}
+/*навигация по сайту*/
+.site-navigation {
+  font-weight: 700;
+  font-size: 16px;
+}
+.site-navigation-link {
+  color: inherit;
+}
+
+/*пользовательская навигация*/
+.user-navigation {
+  font-weight: 500;
+  font-size: 13px;
+}
+.user-navigation-link {
+  color: inherit;
+}
+
+/*номер телефона*/
+.page-contact {
+  position: absolute;
+}
+.page-contact-text {
+  font-weight: 500;
+  font-size: 17px;
+}
+.page-contact-tel-link {
+  font-size: 22px;
+
+  color: inherit;
+}
+
+/*слайдер*/
+.site-wrapper {
+  min-width: 940px;
+  /*height: 620px;*/
+  background-color: #849d8f;
+  background-image: url("../img/products/slide-one-raspberry-jam.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.slider {
+  position: relative;
+
+  padding-top: 321px;
+
+  text-align: center;
+  color: #ffffff;
+}
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.slide {
+  display: none;
+}
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.button {
+  display: inline-block;
+  padding: 12px 44px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.dropdown {
+  display: none;
+}
+.dropdown:hover {
+  background-color: #f8f7f4;
+}
+.dropdown-list{
+  position: relative;
+  display: inline-block;
 }
