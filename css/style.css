@@ -150,9 +150,9 @@ html {
 
   list-style: none;
 }
-/*.slide {
+.slide {
   display: none;
-}*/
+}
 .slide-title {
   width: 700px;
   margin: 0 auto;
@@ -211,6 +211,12 @@ html {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+  display: block;
 }
 
 
