@@ -135,6 +135,20 @@ html {
   background-image: url("../img/products/slide-one-raspberry-jam.png");
   background-repeat: no-repeat;
   background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+.site-wrapper::before {
+  background-image: url("img/slider-item2.png");
+}
+.site-wrapper::after {
+  background-image: url("img/slider-item3.png");
 }
 .slider {
   position: relative;
@@ -212,12 +226,30 @@ html {
   border-radius: 50%;
   cursor: pointer;
 }
-
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/products/slide-one-raspberry-jam.png");
+}
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/products/slide-two-lemon-sorber.png");
+}
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/products/slide-three-strawberry-sorbet.png");
+}
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2,
 #product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
+}
+
+
 
 
 
