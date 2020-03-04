@@ -86,7 +86,6 @@ html {
   margin: 0 auto;
   padding: 0 27px;
 }
-
 /*шапка*/
 .page-header {
   position: relative;
@@ -104,7 +103,6 @@ html {
 .site-navigation-link {
   color: inherit;
 }
-
 /*пользовательская навигация*/
 .user-navigation {
   font-weight: 500;
@@ -113,7 +111,6 @@ html {
 .user-navigation-link {
   color: inherit;
 }
-
 /*номер телефона*/
 .page-contact {
   position: absolute;
@@ -127,7 +124,6 @@ html {
 
   color: inherit;
 }
-
 /*слайдер*/
 .site-wrapper {
   min-width: 940px;
@@ -249,10 +245,54 @@ html {
   background-color: #ffffff;
 }
 
-
-
-
-
+/*акционные предложения*/
+.special-offer {
+  color: #ffffff;
+}
+.special-offer-stock-raspberry-title {
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.special-offer-stock-chocolate-title {
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.special-offer p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.special-offer a {
+  font-size: 18px;
+}
+/*хиты продаж*/
+.catalog {
+  color: #ffffff;
+}
+.catalog a {
+  font-size: 16px;
+  font-weight: 400;
+  color: inherit;
+}
+.catalog-price {
+  font-size: 46px;
+  font-weight: 700;
+}
+.catalog-item-button {
+  display: none;
+}
+/*преимущества*/
+.advantages {
+  color: #323232;
+}
+.advantages-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.advantages-text {
+  font-size: 16px;
+}
 
 
 
