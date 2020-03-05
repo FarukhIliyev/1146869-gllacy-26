@@ -69,11 +69,11 @@
                       <section class="user-navigation-dropdown dropdown-account">
                         <h2 class="visually-hidden">Войти в аккаунт</h2>
                           <form class="dropdown-account-form" action="https://echo.htmlacademy.ru/courses" method="get">
-                            <input class="dropdown-account-input" type="text" name="email" id="email-field" placeholder="Электронная почта">
+                            <input class="dropdown-account-input" type="text" name="email" id="email-field" placeholder="email@example.com">
                             <label for="email-field" class="visually-hidden">Электронная почта</label>
-                            <input class="dropdown-account-input" type="text" name="password" id="password-field" placeholder="Пароль">
+                            <input class="dropdown-account-input" type="text" name="password" id="password-field" placeholder="password">
                             <label for="password-field" class="visually-hidden">Пароль</label>
-                            <button class="dropdown-account-button button" type="submit" name="login">Войти</button>
+                            <button class="dropdown-account-button button" type="button" name="login">Войти</button>
                             <a class="dropdown-account-link" href="#">Забыли пароль?</a>
                             <a class="dropdown-account-link" href="#">Новая регистрация</a>
                           </form>
@@ -272,7 +272,8 @@
                           <p class="map-contact-text">Адрес главного офиса и офлайн-магазина:</p>
                           <address class="map-contact-addres">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
                           <p class="map-contact-text">Для заказов по телефону:
-                            <a class="map-contact-tel" href="tel:+88124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)
+                            <a class="map-contact-tel" href="tel:+88124502525">8 812 450-25-25</a>
+                            (с 10 до 20 ежедневно)
                           </p>
                           <a class="map-contact-button button" href="#">Форма обратной связи</a>
                         </div>
@@ -286,22 +287,22 @@
                 <li class="social-item">
                   <a class="button-outline-color" href="https://twitter.com/">
                     <span class="visually-hidden">Глэйси в Твиттер</span></a>
-                  <img src="img/icons/twitter.png" alt="twitter">
+                  <img class="social-image" src="img/icons/twitter.png" alt="twitter">
                 </li>
-                <li>
+                <li class="social-item">
                   <a class="button-outline-color" href="https://instagram.com/">
                     <span class="visually-hidden">Глэйси в Инстаграм</span></a>
-                  <img src="img/icons/inst.png" alt="instagram">
+                  <img class="social-image" src="img/icons/inst.png" alt="instagram">
                 </li>
-                <li>
+                <li class="social-item">
                   <a class="button-outline-color" href="https://facebook.com/">
                     <span class="visually-hidden">Глэйси в Фейсбук</span></a>
-                  <img src="img/icons/fb.png" alt="facebook">
+                  <img class="social-image" src="img/icons/fb.png" alt="facebook">
                 </li>
-                <li>
+                <li class="social-item">
                   <a class="button-outline-color" href="https://vk.com/">
                     <span class="visually-hidden">Глэйси в Вконтакте</span></a>
-                  <img src="img/icons/vk.png" alt="vkontakte">
+                  <img class="social-image" src="img/icons/vk.png" alt="vkontakte">
                 </li>
               </ul>
           </section>
@@ -312,7 +313,7 @@
                   <a class="documentation-link" href="#">Для поставщиков</a>
                 </li>
                 <li class="documentation-item">
-                  <a class="documentation-link" href="#">наши документы</a>
+                  <a class="documentation-link" href="#">Наши документы</a>
                 </li>
                 <li class="documentation-item">
                   <a class="documentation-link" href="#">О производстве</a>
@@ -327,7 +328,8 @@
               <img class="copyright-images-wrapper" src="img/icons/logo-htmlacademy-small.png" width="108" height="39" alt="HTMLAcademy">
             </a>
             <p class="copyright-text">Сделано в
-              <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span>HTMLAcademy</span></a>2019
+              <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span>HTMLAcademy</span></a>
+              2019
             </p>
           </div>
         </footer>
@@ -337,11 +339,11 @@
           <p class="feedback-text">Мы обязательно вам ответим!</p>
             <button class="feedback-button-close button" type="button" aria-label="Закрыть модально окно">x</button>
               <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
-                <input class="feedback-input" type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+                <input class="feedback-input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
                 <label for="name-field" class="visually-hidden">Имя</label>
-                <input class="feedback-input" type="email" name="email" id="your-email" placeholder="Ваша почта для ответа?">
+                <input class="feedback-input" type="email" name="email" id="your-email" placeholder="email@example.com">
                 <label for="your-email" class="visually-hidden">Почта</label>
-                <textarea class="feedback-textarea" name="massage" id="massage" rows="10" cols="50" aria-label="Напишите нам" placeholder="Напишите что-нибудь..."></textarea>
+                <textarea class="feedback-textarea" name="massage" id="massage" rows="10" cols="50" aria-label="Напишите нам" placeholder="В свободной форме"></textarea>
                 <button class="feedback-button-send button" type="submit" name="feedback">Отправить</button>
               </form>
       </section>

@@ -96,12 +96,25 @@ html {
   color: #ffffff;
 }
 /*навигация по сайту*/
-.site-navigation {
-  font-weight: 700;
+.site-navigation-link {
   font-size: 16px;
+  font-weight: 700;
 }
 .site-navigation-link {
+  font-size: 16px;
+  font-weight: 700;
   color: inherit;
+}
+.dropdown-account-link {
+  font-size: 13px;
+  font-weight: 400;
+
+  text-decoration: underline;
+
+  color: #323232;
+}
+.dropdown-account-button {
+  font-size: 18px;
 }
 /*пользовательская навигация*/
 .user-navigation {
@@ -109,6 +122,9 @@ html {
   font-size: 13px;
 }
 .user-navigation-link {
+  font-size: 14px;
+  font-weight: 700;
+
   color: inherit;
 }
 /*номер телефона*/
@@ -244,7 +260,6 @@ html {
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
-
 /*акционные предложения*/
 .special-offer {
   color: #ffffff;
@@ -270,9 +285,12 @@ html {
 .catalog {
   color: #ffffff;
 }
-.catalog a {
+.catalog-link {
   font-size: 16px;
   font-weight: 400;
+
+  text-decoration: underline;
+
   color: inherit;
 }
 .catalog-price {
@@ -281,6 +299,7 @@ html {
 }
 .catalog-item-button {
   display: none;
+  font-size: 18px;
 }
 /*преимущества*/
 .advantages {
@@ -293,8 +312,88 @@ html {
 .advantages-text {
   font-size: 16px;
 }
+/*мастер класс от глэйси*/
+.recipes {
+  color: #323232;
+}
+.recipes-advice-blog-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.recipes-advice-blog-text {
+  font-size: 24px;
+  font-weight: 600;
 
+  text-decoration: underline;
 
+  color: inherit;
+}
+.recipes-subscription-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.recipes-subscription-form {
+  font-size: 18px;
+}
+/*схема проезда*/
+.map-contact {
+  color: #323232;
+}
+.map-contact-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+a,.map-contact-tel {
+  font-size: 18px;
+  font-weight: 600;
+
+  color: inherit;
+}
+.map-contact-addres {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+.map-contact-button {
+  font-size: 18px;
+}
+/*социальные сети*/
+.social-image {
+  color: #e7ebea;
+}
+.social-image:hover {
+  color: #fefefe;
+}
+/*документация*/
+.documentation-link {
+  font-size: 13px;
+  font-weight: 400;
+
+  text-decoration: underline;
+
+  color: #ffffff;
+}
+/*копирайтер*/
+.copyright-text {
+  font-size: 12px;
+  font-weight: 400;
+
+  color: #ffffff;
+}
+/*обратная связь*/
+.feedback-text {
+  font-size: 24px;
+  font-weight: 600;
+
+  color: #323232;
+}
+.feedback-button-send {
+  font-size: 18px;
+}
+.feedback-input {
+  font-size: 14px;
+  font-weight: 400;
+}
 
 
 
