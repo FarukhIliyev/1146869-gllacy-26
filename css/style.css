@@ -31,9 +31,9 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-/**>*{
+*>*{
   outline: 1px solid #e5e5e5;
-}*/
+}
 
 .visually-hidden {
   position: absolute;
@@ -96,14 +96,23 @@ html {
   color: #ffffff;
 }
 /*навигация по сайту*/
-.site-navigation-link {
-  font-size: 16px;
-  font-weight: 700;
+.site-navigation-list {
+  display: flex;
 }
 .site-navigation-link {
   font-size: 16px;
   font-weight: 700;
+
   color: inherit;
+}
+.site-navigation-link:hover {
+  color: #323232;
+}
+.dropdown-link {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #323232;
 }
 .dropdown-account-link {
   font-size: 13px;
@@ -118,8 +127,14 @@ html {
 }
 /*пользовательская навигация*/
 .user-navigation {
+  position: absolute;
+  top: 33px;
+  right: 44px;
   font-weight: 500;
   font-size: 13px;
+}
+.user-navigation-list {
+  display: flex;
 }
 .user-navigation-link {
   font-size: 14px;
@@ -127,13 +142,25 @@ html {
 
   color: inherit;
 }
+.dropdown-search-form {
+  display: none;
+}
+.dropdown-account-form {
+  display: none;
+}
 /*номер телефона*/
 .page-contact {
   position: absolute;
+  top: 60px;
+  right: 27px;
+  width: 167px;
+  height: 38px;
+
+  z-index: 1;
 }
 .page-contact-text {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 14px;
 }
 .page-contact-tel-link {
   font-size: 22px;
@@ -165,7 +192,7 @@ html {
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 288px;
 
   text-align: center;
   color: #ffffff;
@@ -191,7 +218,7 @@ html {
 .button {
   display: inline-block;
   padding: 12px 44px;
-
+  margin-bottom: 45px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -343,7 +370,8 @@ html {
   font-size: 14px;
   font-weight: 400;
 }
-a,.map-contact-tel {
+a,
+.map-contact-tel {
   font-size: 18px;
   font-weight: 600;
 
@@ -393,17 +421,4 @@ a,.map-contact-tel {
 .feedback-input {
   font-size: 14px;
   font-weight: 400;
-}
-
-
-
-.dropdown {
-  display: none;
-}
-.dropdown:hover {
-  background-color: #f8f7f4;
-}
-.dropdown-list{
-  position: relative;
-  display: inline-block;
 }
