@@ -96,6 +96,9 @@ html {
   color: #ffffff;
 }
 /*навигация по сайту*/
+.site-navigation {
+  width: 400px;
+}
 .site-navigation-list {
   display: flex;
 }
@@ -103,12 +106,15 @@ html {
   font-size: 16px;
   font-weight: 700;
 
+  margin-right: 28px;
+
   color: inherit;
 }
 .site-navigation-link:hover {
   color: #323232;
 }
 .dropdown-link {
+  display: none;
   font-size: 14px;
   font-weight: 400;
 
@@ -310,7 +316,14 @@ html {
 }
 /*хиты продаж*/
 .catalog {
+  width: 1146px;
+  height: 362px;
   color: #ffffff;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .catalog-link {
   font-size: 16px;
@@ -319,10 +332,28 @@ html {
   text-decoration: underline;
 
   color: inherit;
+
+  margin: 0 auto;
 }
 .catalog-price {
   font-size: 46px;
   font-weight: 700;
+
+  margin: 0 auto;
+}
+.catalog-item {
+  width: 267px;
+  height: 406px;
+}
+.catalog-item:hover {
+  width: 267px;
+  height: 406px;
+  background: rgba(205, 214, 219, 0.3);
+  border-radius: 5px;
+}
+.catalog-images-wrapper {
+  width: 267px;
+  height: 267px;
 }
 .catalog-item-button {
   display: none;
