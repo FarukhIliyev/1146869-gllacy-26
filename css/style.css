@@ -295,6 +295,8 @@ html {
 }
 /*акционные предложения*/
 .special-offer {
+  display: flex;
+  flex-direction: row;
   color: #ffffff;
 }
 .special-offer-stock-raspberry-title {
@@ -306,6 +308,34 @@ html {
   font-size: 33px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+.special-offer-stock-raspberry {
+  position: relative;
+  width: 560px;
+  height: 230px;
+  margin-right: 13px;
+  background-image: url("../img/products/raspberry-background.png");
+  background-repeat: no-repeat;
+}
+.special-offer-stock-chocolate {
+  position: relative;
+  width: 560px;
+  height: 230px;
+  margin-left: 13px;
+  background-image: url("../img/products/chocolate-background.png");
+  background-repeat: no-repeat;
+}
+.special-offer-stock-raspberry-link {
+  position: absolute;
+  right: 21px;
+  bottom: -19px;
+  padding: 2px 23px;
+}
+.special-offer-stock-chocolate-link {
+  position: absolute;
+  right: 21px;
+  bottom: -19px;
+  padding: 2px 21px;
 }
 .special-offer p {
   font-size: 18px;
@@ -328,17 +358,13 @@ html {
 .catalog-link {
   font-size: 16px;
   font-weight: 400;
-
   text-decoration: underline;
-
   color: inherit;
-
   margin: 0 auto;
 }
 .catalog-price {
   font-size: 46px;
   font-weight: 700;
-
   margin: 0 auto;
 }
 .catalog-item {
@@ -361,7 +387,9 @@ html {
 }
 /*преимущества*/
 .advantages {
-  color: #323232;
+  position: relative;
+  /*height: 306px;*/
+  background-image: url("../img/products/waffle-background.png");
 }
 .advantages-title {
   font-size: 24px;
@@ -372,7 +400,21 @@ html {
 }
 /*мастер класс от глэйси*/
 .recipes {
+  display: flex;
+  flex-direction: row;
   color: #323232;
+}
+.recipes-advice-blog {
+  width: 560px;
+  height: 220px;
+  margin-right: 13px;
+  background-image: url("../img/products/strawberry-background.png");
+}
+.recipes-subscription {
+  width: 560px;
+  height: 220px;
+  margin-left: 13px;
+  background-image: url("../img/products/mail-background.png");
 }
 .recipes-advice-blog-title {
   font-size: 14px;
@@ -381,9 +423,7 @@ html {
 .recipes-advice-blog-text {
   font-size: 24px;
   font-weight: 600;
-
   text-decoration: underline;
-
   color: inherit;
 }
 .recipes-subscription-text {
@@ -394,7 +434,15 @@ html {
   font-size: 18px;
 }
 /*схема проезда*/
+
 .map-contact {
+  width: 302px;
+  height: 305px;
+  background-image: url("../img/products/background-adress.png");
+  background-repeat: no-repeat;
+  padding-top: 32px;
+  padding-left: 25px;
+  padding-right: 25px;
   color: #323232;
 }
 .map-contact-text {
@@ -413,8 +461,13 @@ a,
   font-weight: 600;
   font-style: normal;
 }
-.map-contact-button {
+.map-contact-btn {
   font-size: 18px;
+  width: 252px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  margin-top: 26px;
 }
 /*социальные сети*/
 .social-image {
