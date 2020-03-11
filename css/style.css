@@ -31,9 +31,9 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-*>*{
+/**>*{
   outline: 1px solid #e5e5e5;
-}
+}*/
 
 .visually-hidden {
   position: absolute;
@@ -88,44 +88,50 @@ html {
 }
 /*шапка*/
 .page-header {
-  position: relative;
+  /*position: relative;*/
   padding-top: 9px;
-
   height: 100px;
-
   color: #ffffff;
+}
+.page-header-logo {
+  margin-right: 12px;
+}
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 /*навигация по сайту*/
 .site-navigation {
-  width: 400px;
+  width: 427px;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 .site-navigation-list {
   display: flex;
+  flex-direction: row;
 }
 .site-navigation-link {
+  text-decoration: underline;
   font-size: 16px;
   font-weight: 700;
-
-  margin-right: 28px;
-
   color: inherit;
+  padding: 9px 14px;
 }
 .site-navigation-link:hover {
+  background-color: #f7f6f3;
   color: #323232;
+  border-radius: 50px;
 }
 .dropdown-link {
   display: none;
   font-size: 14px;
   font-weight: 400;
-
   color: #323232;
 }
 .dropdown-account-link {
   font-size: 13px;
   font-weight: 400;
-
-  text-decoration: underline;
-
   color: #323232;
 }
 .dropdown-account-button {
@@ -133,32 +139,42 @@ html {
 }
 /*пользовательская навигация*/
 .user-navigation {
-  position: absolute;
-  top: 33px;
-  right: 44px;
+  width: 244px;
   font-weight: 500;
   font-size: 13px;
+  padding-top: 20px;
+  margin-left: 313px;
 }
 .user-navigation-list {
   display: flex;
+  flex-direction: row;
 }
 .user-navigation-link {
   font-size: 14px;
   font-weight: 700;
-
   color: inherit;
+  padding: 7px 16px;
+  border-radius: 50px;
+  background-color: #a0b4a9;
 }
-.dropdown-search-form {
-  display: none;
+.user-navigation-link:hover {
+  font-size: 14px;
+  font-weight: 700;
+  color: #323232;
+  padding: 7px 16px;
+  border-radius: 50px;
+  background-color: #f8f7f3;
 }
+.user-navigation-item:not(:last-child) {
+  margin-right: 10px;
+}
+.dropdown-search-form,
 .dropdown-account-form {
   display: none;
 }
 /*номер телефона*/
 .page-contact {
-  position: absolute;
-  top: 60px;
-  right: 27px;
+
   width: 167px;
   height: 38px;
 
