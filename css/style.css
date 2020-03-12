@@ -463,10 +463,11 @@ html {
 }
 .advantages-title {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 auto;
   padding-top: 29px;
   padding-left: 21px;
+  padding-right: 117px;
 }
 .advantages-list {
   display: flex;
@@ -504,14 +505,21 @@ html {
   background-image: url("../img/products/mail-background.png");
 }
 .recipes-advice-blog-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
+  padding-top: 27px;
+  padding-left: 20px;
+  margin: 0;
 }
-.recipes-advice-blog-text {
-  font-size: 24px;
+.recipes-advice-blog-link {
+  display: block;
+  width: 297px;
+  font-size: 23px;
   font-weight: 600;
   text-decoration: underline;
   color: inherit;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 .recipes-subscription-text {
   font-size: 16px;
@@ -541,7 +549,6 @@ html {
   font-size: 14px;
   font-weight: 400;
 }
-a,
 .map-contact-tel {
   font-size: 18px;
   font-weight: 600;
