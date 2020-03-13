@@ -95,7 +95,6 @@ html {
 }
 .page-header-logo {
   margin-left: 27px;
-
 }
 .page-nav {
   display: flex;
@@ -299,6 +298,10 @@ html {
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-controls label:hover{
+  background-color: rgba(255,255,255,0.4);
+}
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/products/slide-one-raspberry-jam.png");
@@ -507,9 +510,9 @@ html {
 .recipes-advice-blog-title {
   font-size: 15px;
   font-weight: 600;
-  padding-top: 27px;
-  padding-left: 20px;
-  margin: 0;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 .recipes-advice-blog-link {
   display: block;
@@ -521,44 +524,84 @@ html {
   margin-top: 10px;
   margin-left: 20px;
 }
+.recipes-subscription {
+  width: 560px;
+}
 .recipes-subscription-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
+  margin-top: 38px;
+  margin-left: 27px;
+  margin-right: 24px;
+  margin-bottom: 43px;
 }
 .recipes-subscription-form {
   font-size: 18px;
+  margin-left: 25px;
+  height: 45px;
+}
+.recipes-subscription-input {
+  font-size: 16px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 10px 13px;
+  width: 368px;
+  height: 44px;
+}
+.recipes-subscription-btn {
+  width: 130px;
+  height: 43px;
+  font-size: 18px;
+  padding: 0 18px;
+  margin-left: 7px;
+  margin-bottom: 0;
 }
 /*схема проезда*/
 .map {
+  position: relative;
   width: 100%;
   margin-top: 40px;
 
   z-index: 1;
 }
 .map-contact {
+  position: absolute;
+  top: 63px;
+  right: 27px;
   width: 302px;
   height: 305px;
   background-image: url("../img/products/background-adress.png");
   background-repeat: no-repeat;
-  padding-top: 32px;
+  padding-top: 27px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 24px;
+  margin: 0 auto;
   color: #323232;
 }
 .map-contact-text {
+  width: 177px;
   font-size: 14px;
   font-weight: 400;
-}
-.map-contact-tel {
-  font-size: 18px;
-  font-weight: 600;
-
-  color: inherit;
+  line-height: 1.4;
+  margin-top: 3px;
+  margin-bottom: 2px;
 }
 .map-contact-addres {
+  width: 222px;
   font-size: 18px;
   font-weight: 600;
   font-style: normal;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.map-contact-number {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.map-contact-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: inherit;
 }
 .map-contact-btn {
   font-size: 18px;
@@ -566,9 +609,21 @@ html {
   height: 44px;
   padding: 0;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 10px;
 }
 /*социальные сети*/
+.page-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 28px;
+}
+.page-footer-social {
+  width: 185px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
 .social-image {
   color: #e7ebea;
 }
@@ -576,20 +631,31 @@ html {
   color: #fefefe;
 }
 /*документация*/
+.page-footer-documentation {
+
+}
+.documentation-list {
+
+}
 .documentation-link {
   font-size: 13px;
   font-weight: 400;
-
   text-decoration: underline;
-
   color: #ffffff;
 }
 /*копирайтер*/
+.page-footer-copyright {
+  width: 215px;
+  margin: 0 auto;
+}
 .copyright-text {
   font-size: 12px;
   font-weight: 400;
-
   color: #ffffff;
+}
+.copyright-link {
+  text-decoration: underline;
+  color: inherit;
 }
 /*обратная связь*/
 .feedback-text {
@@ -604,4 +670,12 @@ html {
 .feedback-input {
   font-size: 14px;
   font-weight: 400;
+}
+
+.page-contact-tel-link:hover,
+.catalog-link:hover,
+.recipes-advice-blog-link:hover,
+.documentation-link:hover,
+.copyright-link:hover {
+  color: #ffbc9e;
 }
