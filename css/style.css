@@ -438,11 +438,16 @@ html {
 }
 .catalog-price {
   position: absolute;
-  bottom: 150px;
+  bottom: 145px;
   font-size: 46px;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   margin: 0;
+  letter-spacing: -1px;
+}
+.catalog-price span {
+  font-size: 27px;
+  font-weight: 700;
 }
 .catalog-text {
   text-align: center;
@@ -483,9 +488,29 @@ html {
   padding-right: 13px;
 }
 .advantages-text {
-  width: 475px;
+  width: 477px;
   font-size: 16px;
   line-height: 1.35;
+}
+.advantages-ice-cream {
+  position: absolute;
+  left: 20px;
+  top: 93px;
+}
+.advantages-cow {
+  position: absolute;
+  left: 585px;
+  top: 93px;
+}
+.advantages-eco {
+  position: absolute;
+  left: 20px;
+  top: 181px;
+}
+.advantages-thermometer {
+  position: absolute;
+  left: 585px;
+  top: 181px;
 }
 /*мастер класс от глэйси*/
 .recipes {
@@ -508,20 +533,20 @@ html {
   background-image: url("../img/products/mail-background.png");
 }
 .recipes-advice-blog-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  margin-top: 27px;
+  margin-top: 24px;
   margin-left: 20px;
   margin-bottom: 0;
 }
 .recipes-advice-blog-link {
   display: block;
   width: 297px;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 600;
   text-decoration: underline;
   color: inherit;
-  margin-top: 10px;
+  margin-top: 7px;
   margin-left: 20px;
 }
 .recipes-subscription {
@@ -588,11 +613,11 @@ html {
 }
 .map-contact-addres {
   width: 222px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   font-style: normal;
   line-height: 1.4;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 .map-contact-number {
   font-size: 14px;
@@ -604,7 +629,7 @@ html {
   color: inherit;
 }
 .map-contact-btn {
-  font-size: 18px;
+  font-size: 17px;
   width: 252px;
   height: 44px;
   padding: 0;
@@ -615,38 +640,46 @@ html {
 .page-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 103px;
   padding: 20px 28px;
 }
 .page-footer-social {
   width: 185px;
+  height: 38px;
+  margin-top: 36px;
+  margin-bottom: 29px;
 }
 .social-list {
   display: flex;
   justify-content: space-between;
 }
-.social-image {
-  color: #e7ebea;
-}
-.social-image:hover {
-  color: #fefefe;
-}
 /*документация*/
 .page-footer-documentation {
-
+  display: flex;
+  width: 326px;
+  height: 36px;
+  padding: 0;
 }
 .documentation-list {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.documentation-item {
+  width: 163px;
+  margin: 0 auto;
 }
 .documentation-link {
   font-size: 13px;
   font-weight: 400;
   text-decoration: underline;
   color: #ffffff;
+  margin: 0 auto;
 }
 /*копирайтер*/
 .page-footer-copyright {
-  width: 215px;
-  margin: 0 auto;
+  width: 189px;
 }
 .copyright-text {
   font-size: 12px;
@@ -661,7 +694,6 @@ html {
 .feedback-text {
   font-size: 24px;
   font-weight: 600;
-
   color: #323232;
 }
 .feedback-button-send {
