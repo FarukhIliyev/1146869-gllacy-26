@@ -166,6 +166,9 @@ html {
   border-radius: 50px;
   background-color: #f8f7f3;
 }
+.user-navigation-dropdown {
+  display: none;
+}
 .user-navigation-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -197,6 +200,66 @@ html {
 .page-contact-tel-link {
   font-size: 22px;
   color: inherit;
+}
+.bread-crumbs-wrapper {
+
+}
+/*фильтр*/
+/*сортировка*/
+.filters {
+  margin-bottom: 40px;
+  color: #fffffd;
+}
+.filters-item legend {
+  font-size: 14px;
+  font-weight: 500;
+}
+.filters-item label {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.sorting {
+  width: 193px;
+  height: 57px;
+  border: none;
+}
+/*сложный фильтр*/
+.sorting-price {
+  position: relative;
+  width: 222px;
+  height: 57px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.price-controls input{
+    width: 55px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    background: 0 0;
+    border: 0;
+    color: inherit;
+}
+/*.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 58%;
+    width: 7px;
+    height: 2px;
+    background: #fff;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}*/
+.sorting-percent {
+
+}
+.sorting-ingredient {
+
 }
 /*слайдер*/
 .site-wrapper {
@@ -331,6 +394,7 @@ html {
   flex-direction: row;
   color: #ffffff;
   margin-left: 27px;
+  margin-bottom: 40px;
 }
 .special-offer-stock-raspberry-title {
   font-size: 33px;
@@ -398,9 +462,8 @@ html {
 /*каталог хиты продаж*/
 .catalog {
   width: 1146px;
-  height: 362px;
+  /*height: 362px;*/
   color: #ffffff;
-  margin-top: 40px;
   margin-left: 27px;
 }
 .catalog-list {
@@ -459,6 +522,9 @@ html {
   font-weight: 400;
   text-decoration: underline;
   color: inherit;
+}
+.pagination {
+
 }
 
 /*преимущества*/
@@ -641,8 +707,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1146;
   height: 103px;
   padding: 20px 28px;
+  border-top: 1px solid #a9bab0;
 }
 .page-footer-social {
   width: 185px;
