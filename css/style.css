@@ -232,22 +232,34 @@ html {
   margin-bottom: 40px;
   color: #fffffd;
 }
-.filters-upper-list {
-  display: flex;
-  align-items: center;
+.filters fieldset {
+  margin: 0 15px 0 0;
+  padding: 0;
 }
-.filters-lower-list {
-  display: flex;
-  align-items: center;
-}
-.filters-item legend {
+.filters legend {
   font-size: 14px;
   font-weight: 500;
+
+  margin-left: 15px;
+  margin-bottom: 7px;
+
+  line-height: 16px;
 }
-.filters-item label {
+.filters label {
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
+}
+.filters-upper {
+  display: flex;
+  margin-left: 27px;
+  margin-bottom: 15px;
+}
+.filters-lower {
+  display: flex;
+  margin-left: 27px;
+  margin-bottom: 15px;
+  /*align-items: center;*/
 }
 .sorting {
   width: 193px;
@@ -280,6 +292,7 @@ html {
   color: inherit;
 }
 .filters-background {
+  height: 36px;
   padding: 8px 12px;
   background-color: rgba(255,255,255,.3);
   border-radius: 25px;
@@ -326,23 +339,23 @@ html {
   display: flex;
 }
 .sorting-ingredient {
-  width: 702px;
+  width: 703px;
 }
 .sorting-ingredient-list {
   display: flex;
 }
 .filters-submit {
-  padding: 8px 28px;
+  height: 37px;
+  width: 144px;
   border: 2px solid #fff;
   border-radius: 25px;
   color: #fff;
   background-color: rgba(255,255,255,.2);
+  margin-top: 22px;
+  padding: 8px 28px;
   cursor: pointer;
 }
 .filters-submit:hover {
-  padding: 8px 28px;
-  border: 2px solid #fff;
-  border-radius: 25px;
   color: #323232;
   background-color: #fbfcfb;
   cursor: pointer;
