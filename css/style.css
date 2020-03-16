@@ -139,7 +139,7 @@ html {
 }
 /*пользовательская навигация*/
 .user-navigation {
-  width: 244px;
+  width: 262px;
   font-weight: 500;
   font-size: 13px;
   padding-top: 23px;
@@ -202,13 +202,43 @@ html {
   color: inherit;
 }
 .bread-crumbs-wrapper {
-
+  margin-left: 27px;
+  padding: 0;
+  color: #ffffff;
+}
+.bread-crumbs-list {
+  display: flex;
+}
+.bread-crumbs-item {
+  font-size: 14px;
+  line-height: 14px;
+  padding-right: 7px;
+}
+.bread-crumbs-link {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.page-content-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 4px;
+  margin-left: 25px;
+  margin-bottom: 36px;
 }
 /*фильтр*/
 /*сортировка*/
 .filters {
   margin-bottom: 40px;
   color: #fffffd;
+}
+.filters-upper-list {
+  display: flex;
+  align-items: center;
+}
+.filters-lower-list {
+  display: flex;
+  align-items: center;
 }
 .filters-item legend {
   font-size: 14px;
@@ -222,7 +252,14 @@ html {
 .sorting {
   width: 193px;
   height: 57px;
+}
+.sorting-select {
   border: none;
+  background: none;
+  color: inherit;
+}
+.sorting-select:hover {
+  color: #323232;
 }
 /*сложный фильтр*/
 .sorting-price {
@@ -231,36 +268,92 @@ html {
   height: 57px;
   margin: 0;
   padding: 0;
-  border: none;
   background: none;
 }
 .price-controls input{
-    width: 55px;
-    margin: 0;
-    font-size: 14px;
-    line-height: 16px;
-    background: 0 0;
-    border: 0;
-    color: inherit;
+  width: 55px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  background: 0 0;
+  border: 0;
+  color: inherit;
 }
-/*.price-controls::after {
-    content: "";
-    position: absolute;
-    top: 45%;
-    left: 58%;
-    width: 7px;
-    height: 2px;
-    background: #fff;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-}*/
+.filters-background {
+  padding: 8px 12px;
+  background-color: rgba(255,255,255,.3);
+  border-radius: 25px;
+}
+.range-controls {
+  position: absolute;
+  bottom: 17px;
+  left: 17px;
+}
+.scale {
+  width: 175px;
+  height: 4px;
+  background: rgba(255,255,255,.3);
+  margin-left: 5px;
+}
+.bar {
+  width: 103px;
+  height: 4px;
+  background: #fff;
+  margin-left: 25px;
+}
+.sorting-price-toggle {
+  position: absolute;
+  top: -8px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0,1,1,.2);
+  cursor: pointer;
+}
+.sorting-price-toggle-min {
+  left: 17px;
+}
+.sorting-price-toggle-max {
+  right: 17px;
+}
 .sorting-percent {
-
+  width: 415px;
+  height: 36px;
+}
+.sorting-percent-list {
+  display: flex;
 }
 .sorting-ingredient {
-
+  width: 702px;
 }
+.sorting-ingredient-list {
+  display: flex;
+}
+.filters-submit {
+  padding: 8px 28px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  background-color: rgba(255,255,255,.2);
+  cursor: pointer;
+}
+.filters-submit:hover {
+  padding: 8px 28px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #323232;
+  background-color: #fbfcfb;
+  cursor: pointer;
+}
+.sorting,
+.sorting-price,
+.sorting-percent,
+.sorting-ingredient {
+  border: none;
+}
+
 /*слайдер*/
 .site-wrapper {
   min-width: 940px;
@@ -773,6 +866,7 @@ html {
 }
 
 .page-contact-tel-link:hover,
+.bread-crumbs-link:hover,
 .catalog-link:hover,
 .recipes-advice-blog-link:hover,
 .documentation-link:hover,

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог | Магазин мороженного "Gllacy"</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
@@ -141,102 +141,127 @@
         </div>
       </header>
       <main class="page-content">
-        <h1 class="page-content-title">Сливочное мороженое</h1>
           <div class="bread-crumbs-wrapper">
             <ul class="bread-crumbs-list reset-list">
               <li class="bread-crumbs-item">
-                <a class="bread-crumbs-link" href="#">Главная</a>
-                </li>
+                <a class="bread-crumbs-link" href="index.html">Главная</a>
+              </li>
+              <li class="bread-crumbs-item">
+                »
+              </li>
               <li class="bread-crumbs-item">
                 <a class="bread-crumbs-link" href="#">Каталог</a>
               </li>
               <li class="bread-crumbs-item">
-                <a class="bread-crumbs-link" href="#">Сливочное</a>
+                »
+              </li>
+              <li class="bread-crumbs-item">
+                Сливочное
               </li>
             </ul>
-        </div>
+          </div>
+        <h1 class="page-content-title">Сливочное мороженое</h1>
         <section class="filters">
           <h2 class="visually-hidden">Форма фильтр</h2>
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="filters-group">
                 <legend class="visually-hidden">Фильтр по категории</legend>
-                  <ul class="filters-list reset-list">
-                    <li class="filters-item sorting">
-                      <fieldset class="sorting">
-                        <legend>Сортировка:</legend>
-                          <select class="sorting-select">
-                            <option class="sorting-option">по популярности</option>
-                          </select>
-                      </fieldset>
-                    </li>
-                    <li class="filters-item">
-                      <fieldset class="sorting-price">
-                        <legend class="price-controls">
-                          <span>Цена:</span>
-                          <label class="min-price"><input type="text" name="min-price" value="100 руб."></label>
-                          <label class="max-price"><input type="text" name="max-price" value="500 руб."></label>
-                        </legend>
-                        <div class="sorting-price-controls">
-                          <div class="scale">
-                            <div class="bar"></div>
+                  <div class="filters-upper-wrapper">
+                    <ul class="filters-upper-list reset-list">
+                      <li class="filters-item sorting">
+                        <fieldset class="sorting">
+                          <legend>Сортировка:</legend>
+                            <div class="filters-background">
+                              <select class="sorting-select">
+                                <option class="sorting-option">по популярности</option>
+                                <option class="sorting-option">сначала недорогие</option>
+                                <option class="sorting-option">сначала дорогие</option>
+                                <option class="sorting-option">по жирности</option>
+                              </select>
+                            </div>
+                        </fieldset>
+                      </li>
+                      <li class="filters-item sorting-price">
+                        <fieldset class="sorting-price">
+                          <legend class="price-controls">
+                            <span>Цена:</span>
+                            <label class="min-price"><input type="text" name="min-price" value="100 руб."></label>
+                            <label class="max-price"><input type="text" name="max-price" value="500 руб."></label>
+                          </legend>
+                          <div class="filters-background">
+                            <div class="sorting-price-controls">
+                              <div class="scale">
+                                <div class="bar"></div>
+                              </div>
+                              <div class="sorting-price-toggle sorting-price-toggle-min"></div>
+                              <div class="sorting-price-toggle sorting-price-toggle-max"></div>
+                            </div>
                           </div>
-                          <div class="sorting-price-toggle sorting-price-toggle-min"></div>
-                          <div class="sorting-price-toggle sorting-price-toggle-max"></div>
-                        </div>
-                      </fieldset>
-                    </li>
-                    <li class="filters-item">
-                      <fieldset class="sorting-percent">
-                        <legend>Жирность:</legend>
-                          <ul class="sorting-percent-list">
-                            <li class="sorting-percent-item">
-                              <input class="sorting-percent-input" type="radio" name="fat" id="zero-percent" value="0%">
-                              <label for="zero-percent">0%</label>
-                            </li>
-                            <li class="sorting-percent-item">
-                              <input class="sorting-percent-input" type="radio" name="fat" id="up-to-ten-percent" value="up-to-10%" checked>
-                              <label for="up-to-ten-percent">до 10%</label>
-                            </li>
-                            <li class="sorting-percent-item">
-                              <input class="sorting-percent-input" type="radio" name="fat" id="up-to-thirty-percent" value="up-to-30%">
-                              <label for="up-to-thirty-percent">до 30%</label>
-                            </li>
-                            <li class="sorting-percent-item">
-                              <input class="sorting-percent-input" type="radio" name="fat" id="over-thirty-percent" value="over-30%">
-                              <label for="over-thirty-percent">свыше 30%</label>
-                            </li>
-                          </ul>
-                      </fieldset>
-                    </li>
-                    <li class="filters-item">
-                      <fieldset class="sorting-ingredient">
-                        <legend>Наполнители:</legend>
-                          <ul class="sorting-ingredient-list">
-                            <li class="sorting-ingredient-item">
-                              <input class="sorting-ingredient-input" type="checkbox" name="chocolads" id="chocolads-field" checked>
-                              <label for="chocolads-field">шоколадные</label>
-                            </li>
-                            <li class="sorting-ingredient-item">
-                              <input class="sorting-ingredient-input" type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
-                              <label for="sugar-powders-field">сахарные присыпки</label>
-                            </li>
-                            <li class="sorting-ingredient-item">
-                              <input class="sorting-ingredient-input" type="checkbox" name="fruits" id="fruits-field">
-                              <label for="fruits-field">фрукты</label>
-                            </li>
-                            <li class="sorting-ingredient-item">
-                              <input class="sorting-ingredient-input" type="checkbox" name="syrups" id="syrups-field">
-                              <label for="syrups-field">сиропы</label>
-                            </li>
-                            <li class="sorting-ingredient-item">
-                              <input class="sorting-ingredient-input" type="checkbox" name="jams" id="jams-field">
-                              <label for="jams-field">джемы</label>
-                            </li>
-                          </ul>
-                      </fieldset>
-                    </li>
-                  </ul>
-                <button class="filters-button" type="submit" name="filter">Применить</button>
+                        </fieldset>
+                      </li>
+                      <li class="filters-item sorting-percent">
+                        <fieldset class="sorting-percent">
+                          <legend>Жирность:</legend>
+                            <div class="filters-background">
+                              <ul class="sorting-percent-list">
+                                <li class="sorting-percent-item">
+                                  <input class="sorting-percent-input" type="radio" name="fat" id="zero-percent" value="0%">
+                                  <label for="zero-percent" tabindex="0">0%</label>
+                                </li>
+                                <li class="sorting-percent-item">
+                                  <input class="sorting-percent-input" type="radio" name="fat" id="up-to-ten-percent" value="up-to-10%" checked>
+                                  <label for="up-to-ten-percent" tabindex="0">до 10%</label>
+                                </li>
+                                <li class="sorting-percent-item">
+                                  <input class="sorting-percent-input" type="radio" name="fat" id="up-to-thirty-percent" value="up-to-30%">
+                                  <label for="up-to-thirty-percent" tabindex="0">до 30%</label>
+                                </li>
+                                <li class="sorting-percent-item">
+                                  <input class="sorting-percent-input" type="radio" name="fat" id="over-thirty-percent" value="over-30%">
+                                  <label for="over-thirty-percent" tabindex="0">свыше 30%</label>
+                                </li>
+                              </ul>
+                          </div>
+                        </fieldset>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="filters-lower-wrapper">
+                    <ul class="filters-lower-list reset-list">
+                      <li class="filters-item sorting-ingredien">
+                        <fieldset class="sorting-ingredient">
+                          <legend>Наполнители:</legend>
+                            <div class="filters-background">
+                              <ul class="sorting-ingredient-list">
+                                <li class="sorting-ingredient-item">
+                                  <input class="sorting-ingredient-input" type="checkbox" name="chocolads" id="chocolads-field" checked>
+                                  <label for="chocolads-field">шоколадные</label>
+                                </li>
+                                <li class="sorting-ingredient-item">
+                                  <input class="sorting-ingredient-input" type="checkbox" name="sugar-powders" id="sugar-powders-field" checked>
+                                  <label for="sugar-powders-field">сахарные присыпки</label>
+                                </li>
+                                <li class="sorting-ingredient-item">
+                                  <input class="sorting-ingredient-input" type="checkbox" name="fruits" id="fruits-field">
+                                  <label for="fruits-field">фрукты</label>
+                                </li>
+                                <li class="sorting-ingredient-item">
+                                  <input class="sorting-ingredient-input" type="checkbox" name="syrups" id="syrups-field">
+                                  <label for="syrups-field">сиропы</label>
+                                </li>
+                                <li class="sorting-ingredient-item">
+                                  <input class="sorting-ingredient-input" type="checkbox" name="jams" id="jams-field">
+                                  <label for="jams-field">джемы</label>
+                                </li>
+                              </ul>
+                            </div>
+                        </fieldset>
+                      </li>
+                      <li class="filters-item sorting-ingredien">
+                        <button class="filters-submit" type="submit" name="filter">Применить</button>
+                      </li>
+                    </ul>
+                  </div>
               </fieldset>
             </form>
         </section>
