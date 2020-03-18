@@ -224,7 +224,7 @@ html {
   color: #ffffff;
   margin-top: 4px;
   margin-left: 25px;
-  margin-bottom: 36px;
+  margin-bottom: 27px;
 }
 /*фильтр*/
 /*сортировка*/
@@ -248,7 +248,6 @@ html {
 .filters label {
   font-size: 14px;
   font-weight: 400;
-  cursor: pointer;
 }
 .filters-upper {
   display: flex;
@@ -282,6 +281,14 @@ html {
   padding: 0;
   background: none;
 }
+.sorting-price-controls {
+  position: absolute;
+  bottom: 13px;
+  left: 17px;
+}
+.sorting-price .filters-background {
+  margin-top: -2px;
+}
 .price-controls input{
   width: 55px;
   margin: 0;
@@ -293,14 +300,9 @@ html {
 }
 .filters-background {
   height: 36px;
-  padding: 8px 12px;
+  padding: 7px 12px;
   background-color: rgba(255,255,255,.3);
   border-radius: 25px;
-}
-.range-controls {
-  position: absolute;
-  bottom: 17px;
-  left: 17px;
 }
 .scale {
   width: 175px;
@@ -316,7 +318,7 @@ html {
 }
 .sorting-price-toggle {
   position: absolute;
-  top: -8px;
+  top: -7px;
   width: 4px;
   height: 4px;
   background: #ababab;
@@ -326,10 +328,10 @@ html {
   cursor: pointer;
 }
 .sorting-price-toggle-min {
-  left: 17px;
+  left: 20px;
 }
 .sorting-price-toggle-max {
-  right: 17px;
+  right: 46px;
 }
 .sorting-percent {
   width: 415px;
@@ -337,6 +339,30 @@ html {
 }
 .sorting-percent-list {
   display: flex;
+}
+.sorting-percent-item {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 33px;
+  padding-right: 14px;
+}
+.sorting-percent-item input {
+  display: none;
+}
+.sorting-percent-item label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.sorting-percent-item+label:before {
+  content: "";
+  display: inline-block;
+  left: -33px;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 3px solid rgba(255,255,255,.7);
+  border-radius: 50%;
 }
 .sorting-ingredient {
   width: 703px;
@@ -865,13 +891,37 @@ html {
   color: inherit;
 }
 /*обратная связь*/
-.feedback-text {
+.feedback {
+  position: absolute;
+  top: 338px;
+  left: 715px;
+  width: 477px;
+  height: 442px;
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  padding: 15px 25px 25px;
+  z-index: 100;
+}
+.feedback-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 25px;
   color: #323232;
+}
+.feedback-button-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 .feedback-button-send {
   font-size: 18px;
+  margin: 0;
 }
 .feedback-input {
   font-size: 14px;
