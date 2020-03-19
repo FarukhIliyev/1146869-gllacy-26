@@ -897,7 +897,7 @@ html {
   left: 715px;
   width: 477px;
   height: 442px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #f8f7f4;
   padding: 15px 25px 25px;
   z-index: 100;
@@ -906,8 +906,12 @@ html {
   font-size: 24px;
   font-weight: 500;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   color: #323232;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
 }
 .feedback-button-close {
   position: absolute;
@@ -921,14 +925,31 @@ html {
 }
 
 .feedback-button-send {
+  align-self: flex-end;
+  width: 138px;
+  height: 44px;
   font-size: 18px;
-  margin: 0;
+  margin: 24px 0 0 0;
+  padding: 0 25px;
+}
+.feedback-textarea {
+  width: 426px;
+  height: 160px;
+  resize: none;
 }
 .feedback-input {
-  font-size: 14px;
-  font-weight: 400;
+  width: 265px;
+  margin: 0 0 17px;
+  padding: 0;
 }
-
+.feedback-input,
+.feedback-textarea {
+  font-size: 16px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 12px;
+}
 .page-contact-tel-link:hover,
 .bread-crumbs-link:hover,
 .catalog-link:hover,
