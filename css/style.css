@@ -88,6 +88,7 @@ html {
 }
 /*шапка*/
 .page-header {
+  display: flex;
   position: relative;
   padding-top: 9px;
   height: 100px;
@@ -105,11 +106,12 @@ html {
 .site-navigation {
   width: 427px;
   padding-top: 20px;
-  margin: 0 auto;
+  margin: 0;
 }
 .site-navigation-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 .site-navigation-link {
   text-decoration: underline;
@@ -123,12 +125,28 @@ html {
   color: #323232;
   border-radius: 50px;
 }
-.dropdown-link {
-  display: none;
+.site-navigation-dropdown {
+  position: absolute;
+}
+.dropdown-list {
+  /*display: none;*/
+  width: 143px;
+  border-radius: 5px;
   font-size: 14px;
   font-weight: 400;
+  background-color: #f8f7f3;
+}
+.dropdown-list a {
+  margin: 21px;
   color: #323232;
 }
+.dropdown-item {
+  margin: 10px;
+}
+
+/*.dropdown:hover {
+  display: block;
+}*/
 .dropdown-account-link {
   font-size: 13px;
   font-weight: 400;
@@ -169,6 +187,7 @@ html {
 .user-navigation-dropdown {
   display: none;
 }
+
 .user-navigation-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -416,17 +435,17 @@ html {
   background-image: url("img/slider-item3.png");
 }
 .slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   position: relative;
-
-  padding-top: 288px;
-
+  height: 550px;
   text-align: center;
   color: #ffffff;
 }
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 .slide {
@@ -436,7 +455,6 @@ html {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -593,10 +611,10 @@ html {
 }
 /*каталог хиты продаж*/
 .catalog {
-  width: 1146px;
-  /*height: 362px;*/
+  max-width: 1146px;
   color: #ffffff;
-  margin-left: 27px;
+  margin: 0 auto;
+  padding: 0;
 }
 .catalog-list {
   display: flex;
@@ -607,6 +625,8 @@ html {
   position: relative;
   width: 267px;
   height: 406px;
+  margin: 0;
+  padding: 0;
 }
 .catalog-item:hover {
   width: 293px;
@@ -615,7 +635,6 @@ html {
   border-radius: 5px;
   padding-left: 18px;
   padding-right: 18px;
-
   z-index: 1;
 }
 .catalog-images-wrapper {
@@ -927,7 +946,24 @@ html {
   height: 20px;
   margin: 0;
   padding: 0;
+  /*display: none;*/
+}
+/*кнопка закрыть модальное окно*/
+.feedback-button-close:before,
+.feedback-button-close:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 3px;
+  background-color: #231f20;
   cursor: pointer;
+}
+.feedback-button-close:before {
+  transform: rotate(45deg);
+}
+.feedback-button-close:after {
+  transform: rotate(-45deg);
 }
 .feedback-button-send {
   align-self: flex-end;
