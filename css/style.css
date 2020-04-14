@@ -655,10 +655,15 @@ html {
   text-decoration: underline;
   color: inherit;
 }
-.pagination {
 
+.pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 0 31px;
+  margin: 0 -15px 0 0;
+  height: 56px;
 }
-
 /*преимущества*/
 .advantages {
   position: relative;
@@ -892,6 +897,7 @@ html {
 }
 /*обратная связь*/
 .feedback {
+  display: none;
   position: absolute;
   top: 338px;
   left: 715px;
