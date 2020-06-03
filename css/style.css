@@ -4,8 +4,8 @@
   font-style: normal;
 
   src: local('Roboto-Regular'),
-       url('/fonts/web/roboto.woff2') format('woff2'),
-       url('/fonts/web/roboto.woff') format('woff');
+       url('/fonts/roboto.woff2') format('woff2'),
+       url('/fonts/roboto.woff') format('woff');
 }
 @font-face {
   font-family: 'Roboto';
@@ -13,8 +13,8 @@
   font-style: normal;
 
   src: local('Roboto-Medium'),
-       url('/fonts/web/robotomedium.woff2') format('woff2'),
-       url('/fonts/web/robotomedium.woff') format('woff');
+       url('/fonts/robotomedium.woff2') format('woff2'),
+       url('/fonts/robotomedium.woff') format('woff');
 }
 @font-face {
   font-family: 'Roboto';
@@ -22,8 +22,8 @@
   font-style: normal;
 
   src: local('Roboto-Bold'),
-       url('/fonts/web/robotobold.woff2') format('woff2'),
-       url('/fonts/web/robotobold.woff') format('woff');
+       url('/fonts/robotobold.woff2') format('woff2'),
+       url('/fonts/robotobold.woff') format('woff');
 }
 html {
   box-sizing: border-box;
