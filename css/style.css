@@ -993,12 +993,16 @@ html {
   background-color: #231f20;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .feedback-button-close:before {
   transform: rotate(45deg);
 }
 .feedback-button-close:after {
   transform: rotate(-45deg);
 }
+=======
+
+>>>>>>> 2b3ef0165002e47ca64cb61b7a58145f7b1a1baf
 .feedback-button-send {
   align-self: flex-end;
   width: 138px;
