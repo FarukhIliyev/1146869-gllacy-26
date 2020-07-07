@@ -1,3 +1,27 @@
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #FB565A;
+  --basic-light-dark: #283136;
+  --basic-dark: #D7373B;
+  --basic-light-silver: #EEEEEE;
+  --basic-silver: #DFDFDF;
+  --basic-silver-dark: #D5D5D5;
+  --basic-white: #ffffff;
+  --basic-light-red: #FB565A;
+  --basic-red: #E74246;
+  --basic-dark-red: #D7373B;
+  --basic-light-green: #00CA74;
+  --basic-green: #00BC6C;
+  --basic-dark-green: #00AA62;
+  --basic-light-yellow: #EFC849;
+  --basic-yellow: #EAB534;
+  --basic-dark-yellow: #E5A722;
+  --rare: #444444;
+  --special: #666666;
+  --special-gray: #888888;
+  --basic-light-gray: #E1E1E1;
+  --basic-gray-dark: #4d4d4d;
+}
 @font-face {
   font-family: 'Roboto';
   font-weight: 400;
@@ -31,34 +55,28 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-/**>*{
-  outline: 1px solid #e5e5e5;
-}*/
+*>*{
+  outline: 1px solid var(--basic-black);
+}
 
 .visually-hidden {
   position: absolute;
-
   overflow: hidden;
   clip: rect(0 0 0 0);
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
   border: 0;
 }
 .reset-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 body {
   margin: 0;
-
   background-color: #849d8f;
-
   font-family: 'Roboto', 'Arial', sans-serif;
   line-height: 1.2;
 }
@@ -78,7 +96,6 @@ a {
 html {
   box-sizing: border-box;
 }
-
 /*основной контейнер сайта*/
 .container {
   align-items: center;
@@ -92,7 +109,7 @@ html {
   position: relative;
   padding-top: 9px;
   height: 100px;
-  color: #ffffff;
+  color: var(--basic-white);
 }
 .page-header-logo {
   margin-left: 27px;
@@ -247,7 +264,6 @@ html {
   justify-content: flex-end;
   font-weight: 500;
   font-size: 14px;
-
   line-height: 1.34;
 }
 .page-contact-tel-link {
@@ -292,10 +308,8 @@ html {
 .filters legend {
   font-size: 14px;
   font-weight: 500;
-
   margin-left: 15px;
   margin-bottom: 7px;
-
   line-height: 16px;
 }
 .filters label {
@@ -404,12 +418,14 @@ html {
 }
 .sorting-percent-item label {
   display: inline-block;
+  vertical-align: top;
   cursor: pointer;
   position: relative;
 }
 .sorting-percent-item+label:before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   left: -33px;
   top: 0;
   width: 22px;
